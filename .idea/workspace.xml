@@ -2,260 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8bcbe8c1-5377-49e4-95e7-d3e12809d1cd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/android-icon-144x144.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/android-icon-192x192.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/android-icon-36x36.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/android-icon-48x48.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/android-icon-72x72.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/android-icon-96x96.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/apple-icon-120x120.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Anchor_Sweat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Annaki_Drive_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Annaki_Evolution_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Armor_Jacket_Replica.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_B-ball_Jersey_(Away).png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Baby-Jelly_Shirt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Baby-Jelly_Shirt_&amp;_Tie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Basic_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Berry_Ski_Jacket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Birded_Corduroy_Jacket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Black_Inky_Rider.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Black_LS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Black_Squideye.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Black_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Black_Urchin_Rock_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Black_V-Neck_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Blue_Peaks_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Blue_Sailor_Suit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Blue_Tentatek_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Brown_FA-11_Bomber.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Camo_Zip_Hoodie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Chilly_Mountain_Coat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Chirpy_Chips_Band_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Choco_Layered_LS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Crimson_Parashooter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Cycle_King_Jersey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Dark_Urban_Vest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Eggplant_Mountain_Coat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_FA-01_Jacket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_FA-01_Reversed.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_FC_Albacore.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Fugu_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Grape_Hoodie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Gray_8-Bit_FishFry.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Gray_FA-11_Bomber.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Gray_Hoodie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Green-Check_Shirt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Green_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Green_V-Neck_Limited_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Half-Sleeve_Sweater.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Hero_Hoodie_Replica.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Hero_Jacket_Replica.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Hightide_Era_Band_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Hula_Punk_Shirt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Inkfall_Shirt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Inkopolis_Squaps_Jersey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_King_Jersey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Layered_Anchor_LS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Layered_Vector_LS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Lime_Easy-Stripe_Shirt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Logo_Aloha_Shirt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Matcha_Down_Jacket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Mint_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Mister_Shrug_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Navy_Deca_Logo_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Navy_King_Tank.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Navy_Striped_LS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Negative_Longcuff_Sweater.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Octobowler_Shirt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Pink_Easy-Stripe_Shirt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Positive_Longcuff_Sweater.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Power_Armor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Power_Armor_Mk_I.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Prune_Parashooter.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Pullover_Coat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Purple_Camo_LS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Red_Tentatek_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Red_V-Neck_Limited_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Red_Vector_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Reel_Sweat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Retro_Sweat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Sailor-Stripe_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Samurai_Jacket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_School_Cardigan.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_School_Uniform.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Shirt_&amp;_Tie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Shirt_with_Blue_Hoodie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Short_Knit_Layers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Shrimp-Pink_Polo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Slash_King_Tank.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Slipstream_United.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Splatfest_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Squid_Satin_Jacket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Squid_Squad_Band_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Squiddor_Polo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Squinja_Suit.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Sunny-Day_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Takoroka_Windcrusher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Urchins_Jersey.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Varsity_Jacket.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Vintage_Check_Shirt.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Wet_Floor_Band_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_White_8-Bit_FishFry.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_White_Anchor_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_White_Baseball_LS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_White_Deca_Logo_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_White_Inky_Rider.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_White_King_Tank.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_White_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_White_Urchin_Rock_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_White_V-Neck_Tee.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Yellow_Layered_LS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Yellow_Urban_Vest.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Zekko_Baseball_LS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Zekko_Hoodie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Zekko_Jade_Coat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Zekko_Redleaf_Coat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Zink_Layered_LS.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_18K_Aviators.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Annaki_Beret.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Annaki_Mask.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Armor_Helmet_Replica.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Backwards_Cap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Bamboo_Hat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Bike_Helmet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Blowfish_Bell_Hat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Bobble_Hat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Bucket_Hat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Camo_Mesh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Camping_Hat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Cycle_King_Cap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Fake_Contacts.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Firefin_Facemask.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_FishFry_Visor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Five-Panel_Cap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Half-Rim_Glasses.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Headlamp_Helmet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Hero_Headphones_Replica.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Hero_Headset_Replica.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Hickory_Work_Cap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Hockey_Helmet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Jellyvader_Cap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_King_Facemask.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_King_Flip_Mesh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Knitted_Hat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Lightweight_Cap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_MTB_Helmet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Noise_Cancelers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Paintball_Mask.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Painter's_Mask.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Patched_Hat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Pilot_Goggles.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Power_Mask.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Power_Mask_Mk_I.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Retro_Specs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Safari_Hat.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Samurai_Helmet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Skull_Bandana.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Snorkel_Mask.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Soccer_Headband.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Special_Forces_Beret.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Squash_Headband.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Squid_Clip-Ons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Squid_Facemask.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Squid_Hairclip.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Squidfin_Hook_Cans.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Squidvader_Cap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Squinja_Mask.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Straw_Boater.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Striped_Beanie.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Studio_Headphones.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Sun_Visor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Takoroka_Mesh.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Takoroka_Visor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Tennis_Headband.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Tinted_Shades.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Urchins_Cap.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Visor_Skate_Helmet.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_White_Headband.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Acerola_Rain_Boots.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Armor_Boot_Replicas.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Arrow_Pull-Ons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Birch_Climbing_Shoes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Black_Dakroniks.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Black_Flip-Flops.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Black_Norimaki_750s.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Black_Trainers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Blue_&amp;_Black_Squidkid_IV.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Blue_Moto_Boots.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Blue_Slip-Ons.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Blueberry_Casuals.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Canary_Trainers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Cherry_Kicks.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Choco_Clogs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Crazy_Arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Cream_Basics.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Fringed_Loafers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Gold_Hi-Horses.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Gray_Sea-Slug_Hi-Tops.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Hero_Runner_Replicas.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Hero_Snowboots_Replicas.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Hunter_Hi-Tops.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Hunting_Boots.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Kid_Clams.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_LE_Soccer_Shoes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Mawcasins.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Mint_Dakroniks.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Moto_Boots.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Neon_Delta_Straps.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Neon_Sea_Slugs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Orange_Arrows.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Orca_Hi-Tops.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Oyster_Clogs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Pink_Trainers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Piranha_Moccasins.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Plum_Casuals.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Power_Boots.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Power_Boots_Mk_I.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Pro_Trail_Boots.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Punk_Blacks.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Punk_Whites.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Purple_Hi-Horses.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Purple_Sea_Slugs.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Red-Mesh_Sneakers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Red_&amp;_Black_Squidkid_IV.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Red_Hi-Horses.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Roasted_Brogues.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Samurai_Shoes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_School_Shoes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Smoky_Wingtips.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Snow_Delta_Straps.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Squinja_Boots.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Strapping_Reds.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Strapping_Whites.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Sunny_Climbing_Shoes.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Sunset_Orca_Hi-Tops.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Trail_Boots.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_White_Kicks.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_White_Norimaki_750s.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_White_Seahorses.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Yellow-Mesh_Sneakers.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/Thumbs.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PWA/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/main.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/gear.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/manifest.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/service-worker.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/ionic.app.css" afterPath="$PROJECT_DIR$/src/css/ionic.app.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers.js" afterPath="$PROJECT_DIR$/src/js/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/services.js" afterPath="$PROJECT_DIR$/src/js/services.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/filters.html" afterPath="$PROJECT_DIR$/src/templates/filters.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/gearList.html" afterPath="$PROJECT_DIR$/src/templates/gearList.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/menu.html" afterPath="$PROJECT_DIR$/src/templates/menu.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -272,8 +22,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+            <state relative-caret-position="2398">
+              <caret line="109" column="37" lean-forward="true" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -282,14 +32,26 @@
       <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            <state relative-caret-position="421">
+              <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+              <folding>
+                <element signature="e#508#759#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bower.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bower.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PWA/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -304,7 +66,9 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="418">
               <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-              <folding />
+              <folding>
+                <marker date="1502482556988" expanded="true" signature="450:713" ph="{&quot;bower&quot;: &quot;^1.3.9&quot;...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -326,8 +90,8 @@
       <file leaf-file-name="gear.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/data/gear.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4259">
-              <caret line="230" column="237" lean-forward="false" selection-start-line="230" selection-start-column="237" selection-end-line="230" selection-end-column="237" />
+            <state relative-caret-position="174">
+              <caret line="124" column="108" lean-forward="false" selection-start-line="124" selection-start-column="100" selection-end-line="124" selection-end-column="108" />
               <folding />
             </state>
           </provider>
@@ -336,8 +100,8 @@
       <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+            <state relative-caret-position="483">
+              <caret line="40" column="79" lean-forward="false" selection-start-line="40" selection-start-column="79" selection-end-line="40" selection-end-column="79" />
               <folding>
                 <element signature="e#188#238#0" expanded="true" />
                 <element signature="e#258#354#0" expanded="true" />
@@ -347,27 +111,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/css/main.css">
+      <file leaf-file-name=".firebaserc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.firebaserc">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="services.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/services.js">
+      <file leaf-file-name="firebase.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/firebase.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="101" column="33" lean-forward="false" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
-              <folding>
-                <element signature="e#95#504#0" expanded="true" />
-                <element signature="e#519#947#0" expanded="true" />
-                <element signature="e#959#1351#0" expanded="true" />
-                <element signature="e#1362#1692#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="110">
+              <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -393,6 +152,7 @@
       <find>doubler</find>
       <find>raritiy</find>
       <find>assets/images</find>
+      <find>comeback</find>
     </findStrings>
     <replaceStrings>
       <replace>bower_components</replace>
@@ -423,11 +183,12 @@
         <option value="$PROJECT_DIR$/src/js/services.js" />
         <option value="$PROJECT_DIR$/src/data/gear.json" />
         <option value="$PROJECT_DIR$/src/templates/gearList.html" />
-        <option value="$PROJECT_DIR$/src/js/controllers.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/manifest.json" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/src/index.html" />
+        <option value="$PROJECT_DIR$/src/js/controllers.js" />
+        <option value="$PROJECT_DIR$/firebase.json" />
       </list>
     </option>
   </component>
@@ -499,40 +260,6 @@
             <path>
               <item name="splat" type="b2602c69:ProjectViewProjectNode" />
               <item name="splat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="splat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="splat" type="462c0819:PsiDirectoryNode" />
-              <item name="PWA" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="splat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="splat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="splat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="splat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="splat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="splat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="splat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="splat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="splat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="splat" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -627,12 +354,20 @@
       <option name="presentableId" value="Default" />
       <updated>1502425739768</updated>
       <workItem from="1502425743053" duration="4463000" />
-      <workItem from="1502457790427" duration="17609000" />
+      <workItem from="1502457790427" duration="19917000" />
     </task>
+    <task id="LOCAL-00001" summary="moving to pwa">
+      <created>1502482406517</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1502482406517</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22072000" />
+    <option name="totallyTimeSpent" value="24380000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -662,6 +397,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="moving to pwa" />
+    <option name="LAST_COMMIT_MESSAGE" value="moving to pwa" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -705,13 +444,6 @@
         <state relative-caret-position="132">
           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.firebaserc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -828,14 +560,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/data/gear.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4259">
-          <caret line="230" column="237" lean-forward="false" selection-start-line="230" selection-start-column="237" selection-end-line="230" selection-end-column="237" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/gearList.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
@@ -848,23 +572,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
-          <folding>
-            <element signature="e#188#238#0" expanded="true" />
-            <element signature="e#258#354#0" expanded="true" />
-            <element signature="e#455#744#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-          <folding />
+          <folding>
+            <marker date="1502482556988" expanded="true" signature="450:713" ph="{&quot;bower&quot;: &quot;^1.3.9&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -884,26 +598,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.html">
+    <entry file="file://$PROJECT_DIR$/PWA/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        <state relative-caret-position="421">
+          <caret line="43" column="3" lean-forward="true" selection-start-line="43" selection-start-column="3" selection-end-line="43" selection-end-column="3" />
+          <folding>
+            <element signature="e#508#759#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="33" lean-forward="true" selection-start-line="18" selection-start-column="33" selection-end-line="18" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PWA/index.html">
+    <entry file="file://$PROJECT_DIR$/src/data/gear.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="124" column="108" lean-forward="false" selection-start-line="124" selection-start-column="100" selection-end-line="124" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2398">
+          <caret line="109" column="37" lean-forward="true" selection-start-line="109" selection-start-column="37" selection-end-line="109" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="40" column="79" lean-forward="false" selection-start-line="40" selection-start-column="79" selection-end-line="40" selection-end-column="79" />
+          <folding>
+            <element signature="e#188#238#0" expanded="true" />
+            <element signature="e#258#354#0" expanded="true" />
+            <element signature="e#455#744#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.firebaserc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebase.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
           <folding />
         </state>
       </provider>
