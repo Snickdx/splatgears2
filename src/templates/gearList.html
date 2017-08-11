@@ -1,19 +1,42 @@
 <ion-view title="Gear List" id="page1">
-  <ion-content padding="true" class="has-header">
-    <div id="gearList-container1">
-      <ion-list id="gearList-list3">
-        <ion-item class="item-thumbnail-left" id="gearList-list-item11">
-          <h2>Item</h2>
-        </ion-item>
-        <ion-item class="item-thumbnail-left" id="gearList-list-item12">
-          <h2>Item</h2>
-        </ion-item>
-        <ion-item class="item-thumbnail-left" id="gearList-list-item13">
-          <h2>Item</h2>
-        </ion-item>
-      </ion-list>
+
+    <div class="col bar bar-subheader bar-assertive item-input-inset" style="height: 18vh" >
+
+        <label class="item item-select item-assertive row-no-padding" id="filters-select1">
+            <span class="input-label">Type</span>
+            <select ng-model="input.Type">
+                <option selected>Any</option>
+                <option>headgear</option>
+                <option>clothing</option>
+                <option>shoes</option>
+            </select>
+        </label>
+
+        <label class="item item-select item-assertive row-no-padding" id="filters-select3">
+            <span class="input-label">Main Ability</span>
+            <select ng-model="input.Main" ng-options="item for item in Abilities.all"></select>
+        </label>
+
+        <label class="item item-select item-assertive row-no-padding" id="filters-select2">
+            <span class="input-label">Likely Sub</span>
+            <select ng-model="input.Sub" ng-options="item for item in Abilities.subs"></select>
+        </label>
+        <!--<ion-toggle toggle-class="toggle-assertive" id="filters-toggle1">Separate Sub/Main</ion-toggle>-->
+
     </div>
-    <div class="spacer" style="width: 300px; height: 93px;"></div>
-    <a ui-sref="filters()" id="gearList-button1" class="button button-assertive button-block">Open Filters</a>
-  </ion-content>
+    <ion-content style="margin-top:18vh">
+        <ion-list id="gearList-list3">
+            <ion-item class="item-thumbnail-left" id="gearList-list-item11" ng-repeat="gear in gears | filter: searchFilter">
+                <img ng-src="../img/gear/{{gear.image}}">
+                <h2>{{gear.name}}</h2>
+                <p>Brand: {{gear.brand}}</p>
+                <p>Main Ability: {{gear.main}}</p>
+                <p>Likely Sub: {{gear.likely_sub}}</p>
+                <p>Rarity {{gear.rarity}}</p>
+            </ion-item>
+        </ion-list>
+
+    </ion-content>
+
+
 </ion-view>

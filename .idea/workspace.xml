@@ -1,7 +1,262 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8bcbe8c1-5377-49e4-95e7-d3e12809d1cd" name="Default" comment="" />
+    <list default="true" id="8bcbe8c1-5377-49e4-95e7-d3e12809d1cd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/android-icon-144x144.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/android-icon-192x192.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/android-icon-36x36.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/android-icon-48x48.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/android-icon-72x72.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/android-icon-96x96.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/apple-icon-120x120.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/favicon.ico" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Anchor_Sweat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Annaki_Drive_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Annaki_Evolution_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Armor_Jacket_Replica.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_B-ball_Jersey_(Away).png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Baby-Jelly_Shirt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Baby-Jelly_Shirt_&amp;_Tie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Basic_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Berry_Ski_Jacket.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Birded_Corduroy_Jacket.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Black_Inky_Rider.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Black_LS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Black_Squideye.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Black_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Black_Urchin_Rock_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Black_V-Neck_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Blue_Peaks_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Blue_Sailor_Suit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Blue_Tentatek_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Brown_FA-11_Bomber.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Camo_Zip_Hoodie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Chilly_Mountain_Coat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Chirpy_Chips_Band_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Choco_Layered_LS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Crimson_Parashooter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Cycle_King_Jersey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Dark_Urban_Vest.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Eggplant_Mountain_Coat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_FA-01_Jacket.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_FA-01_Reversed.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_FC_Albacore.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Fugu_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Grape_Hoodie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Gray_8-Bit_FishFry.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Gray_FA-11_Bomber.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Gray_Hoodie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Green-Check_Shirt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Green_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Green_V-Neck_Limited_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Half-Sleeve_Sweater.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Hero_Hoodie_Replica.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Hero_Jacket_Replica.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Hightide_Era_Band_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Hula_Punk_Shirt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Inkfall_Shirt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Inkopolis_Squaps_Jersey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_King_Jersey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Layered_Anchor_LS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Layered_Vector_LS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Lime_Easy-Stripe_Shirt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Logo_Aloha_Shirt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Matcha_Down_Jacket.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Mint_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Mister_Shrug_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Navy_Deca_Logo_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Navy_King_Tank.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Navy_Striped_LS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Negative_Longcuff_Sweater.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Octobowler_Shirt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Pink_Easy-Stripe_Shirt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Positive_Longcuff_Sweater.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Power_Armor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Power_Armor_Mk_I.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Prune_Parashooter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Pullover_Coat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Purple_Camo_LS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Red_Tentatek_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Red_V-Neck_Limited_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Red_Vector_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Reel_Sweat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Retro_Sweat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Sailor-Stripe_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Samurai_Jacket.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_School_Cardigan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_School_Uniform.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Shirt_&amp;_Tie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Shirt_with_Blue_Hoodie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Short_Knit_Layers.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Shrimp-Pink_Polo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Slash_King_Tank.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Slipstream_United.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Splatfest_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Squid_Satin_Jacket.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Squid_Squad_Band_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Squiddor_Polo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Squinja_Suit.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Sunny-Day_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Takoroka_Windcrusher.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Urchins_Jersey.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Varsity_Jacket.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Vintage_Check_Shirt.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Wet_Floor_Band_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_White_8-Bit_FishFry.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_White_Anchor_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_White_Baseball_LS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_White_Deca_Logo_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_White_Inky_Rider.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_White_King_Tank.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_White_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_White_Urchin_Rock_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_White_V-Neck_Tee.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Yellow_Layered_LS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Yellow_Urban_Vest.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Zekko_Baseball_LS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Zekko_Hoodie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Zekko_Jade_Coat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Zekko_Redleaf_Coat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Clothing_Zink_Layered_LS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_18K_Aviators.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Annaki_Beret.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Annaki_Mask.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Armor_Helmet_Replica.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Backwards_Cap.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Bamboo_Hat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Bike_Helmet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Blowfish_Bell_Hat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Bobble_Hat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Bucket_Hat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Camo_Mesh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Camping_Hat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Cycle_King_Cap.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Fake_Contacts.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Firefin_Facemask.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_FishFry_Visor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Five-Panel_Cap.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Half-Rim_Glasses.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Headlamp_Helmet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Hero_Headphones_Replica.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Hero_Headset_Replica.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Hickory_Work_Cap.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Hockey_Helmet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Jellyvader_Cap.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_King_Facemask.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_King_Flip_Mesh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Knitted_Hat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Lightweight_Cap.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_MTB_Helmet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Noise_Cancelers.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Paintball_Mask.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Painter's_Mask.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Patched_Hat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Pilot_Goggles.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Power_Mask.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Power_Mask_Mk_I.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Retro_Specs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Safari_Hat.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Samurai_Helmet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Skull_Bandana.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Snorkel_Mask.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Soccer_Headband.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Special_Forces_Beret.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Squash_Headband.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Squid_Clip-Ons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Squid_Facemask.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Squid_Hairclip.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Squidfin_Hook_Cans.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Squidvader_Cap.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Squinja_Mask.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Straw_Boater.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Striped_Beanie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Studio_Headphones.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Sun_Visor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Takoroka_Mesh.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Takoroka_Visor.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Tennis_Headband.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Tinted_Shades.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Urchins_Cap.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_Visor_Skate_Helmet.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Headgear_White_Headband.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Acerola_Rain_Boots.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Armor_Boot_Replicas.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Arrow_Pull-Ons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Birch_Climbing_Shoes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Black_Dakroniks.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Black_Flip-Flops.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Black_Norimaki_750s.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Black_Trainers.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Blue_&amp;_Black_Squidkid_IV.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Blue_Moto_Boots.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Blue_Slip-Ons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Blueberry_Casuals.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Canary_Trainers.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Cherry_Kicks.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Choco_Clogs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Crazy_Arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Cream_Basics.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Fringed_Loafers.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Gold_Hi-Horses.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Gray_Sea-Slug_Hi-Tops.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Hero_Runner_Replicas.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Hero_Snowboots_Replicas.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Hunter_Hi-Tops.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Hunting_Boots.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Kid_Clams.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_LE_Soccer_Shoes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Mawcasins.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Mint_Dakroniks.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Moto_Boots.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Neon_Delta_Straps.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Neon_Sea_Slugs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Orange_Arrows.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Orca_Hi-Tops.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Oyster_Clogs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Pink_Trainers.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Piranha_Moccasins.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Plum_Casuals.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Power_Boots.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Power_Boots_Mk_I.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Pro_Trail_Boots.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Punk_Blacks.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Punk_Whites.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Purple_Hi-Horses.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Purple_Sea_Slugs.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Red-Mesh_Sneakers.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Red_&amp;_Black_Squidkid_IV.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Red_Hi-Horses.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Roasted_Brogues.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Samurai_Shoes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_School_Shoes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Smoky_Wingtips.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Snow_Delta_Straps.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Squinja_Boots.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Strapping_Reds.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Strapping_Whites.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Sunny_Climbing_Shoes.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Sunset_Orca_Hi-Tops.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Trail_Boots.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_White_Kicks.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_White_Norimaki_750s.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_White_Seahorses.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/60px-S2_Gear_Shoes_Yellow-Mesh_Sneakers.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/img/gear/Thumbs.db" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/PWA/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/main.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/data/gear.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/manifest.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gulpfile.js" afterPath="$PROJECT_DIR$/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/ionic.app.css" afterPath="$PROJECT_DIR$/src/css/ionic.app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.html" afterPath="$PROJECT_DIR$/src/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/controllers.js" afterPath="$PROJECT_DIR$/src/js/controllers.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/services.js" afterPath="$PROJECT_DIR$/src/js/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/filters.html" afterPath="$PROJECT_DIR$/src/templates/filters.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/gearList.html" afterPath="$PROJECT_DIR$/src/templates/gearList.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/menu.html" afterPath="$PROJECT_DIR$/src/templates/menu.html" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -13,23 +268,105 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="107" column="68" lean-forward="false" selection-start-line="107" selection-start-column="68" selection-end-line="107" selection-end-column="68" />
+            <state relative-caret-position="352">
+              <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PWA/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gearList.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/templates/gearList.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
               <folding>
-                <element signature="e#384#600#0" expanded="true" />
-                <element signature="e#603#648#0" expanded="true" />
-                <element signature="e#727#820#0" expanded="true" />
-                <element signature="e#857#879#0" expanded="true" />
-                <element signature="e#1024#1050#0" expanded="true" />
-                <element signature="e#1090#1120#0" expanded="true" />
-                <element signature="e#1748#1777#0" expanded="true" />
-                <element signature="e#2048#2077#0" expanded="true" />
-                <element signature="e#2130#2183#0" expanded="true" />
-                <element signature="e#2319#2340#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#ion-view#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+                <marker date="1502480989336" expanded="true" signature="0:1755" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gear.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/data/gear.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4259">
+              <caret line="230" column="237" lean-forward="false" selection-start-line="230" selection-start-column="237" selection-end-line="230" selection-end-column="237" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllers.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/controllers.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="241">
+              <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+              <folding>
+                <element signature="e#188#238#0" expanded="true" />
+                <element signature="e#258#354#0" expanded="true" />
+                <element signature="e#455#744#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="services.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/services.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="101" column="33" lean-forward="false" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
+              <folding>
+                <element signature="e#95#504#0" expanded="true" />
+                <element signature="e#519#947#0" expanded="true" />
+                <element signature="e#959#1351#0" expanded="true" />
+                <element signature="e#1362#1692#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -41,21 +378,63 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>components</find>
+      <find>da</find>
+      <find>#f34871</find>
+      <find>detail</find>
+      <find>target</find>
+      <find>drop</find>
+      <find>doubler</find>
+      <find>raritiy</find>
+      <find>assets/images</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>bower_components</replace>
+      <replace>#F67896</replace>
+      <replace>target</replace>
+      <replace>detail</replace>
+      <replace>rarity</replace>
+      <replace>img</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/js/app.js" />
+        <option value="$PROJECT_DIR$/.bowerrc" />
+        <option value="$PROJECT_DIR$/src/templates/filters.html" />
+        <option value="$PROJECT_DIR$/src/js/headroom.angular.js" />
+        <option value="$PROJECT_DIR$/src/js/headroom.min.js" />
+        <option value="$PROJECT_DIR$/src/css/ionic.app.css" />
+        <option value="$PROJECT_DIR$/src/templates/menu.html" />
+        <option value="$PROJECT_DIR$/src/css/main.css" />
+        <option value="$PROJECT_DIR$/src/js/directives.js" />
+        <option value="$PROJECT_DIR$/src/js/services.js" />
+        <option value="$PROJECT_DIR$/src/data/gear.json" />
+        <option value="$PROJECT_DIR$/src/templates/gearList.html" />
+        <option value="$PROJECT_DIR$/src/js/controllers.js" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/manifest.json" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
+        <option value="$PROJECT_DIR$/src/index.html" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
+    <package-json value="$PROJECT_DIR$/package.json" />
+  </component>
   <component name="JsFlowSettings">
     <service-enabled>false</service-enabled>
     <exe-path />
@@ -67,9 +446,13 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/functions/node_modules" />
+    <handled-path value="$PROJECT_DIR$/node_modules" />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="618" />
-    <option name="y" value="66" />
+    <option name="x" value="376" />
+    <option name="y" value="292" />
     <option name="width" value="974" />
     <option name="height" value="1040" />
   </component>
@@ -92,6 +475,7 @@
       </profile-state>
     </entry>
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -108,6 +492,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,11 +500,44 @@
               <item name="splat" type="b2602c69:ProjectViewProjectNode" />
               <item name="splat" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="splat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="splat" type="462c0819:PsiDirectoryNode" />
+              <item name="PWA" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="splat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="splat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="splat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="splat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="splat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="splat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="splat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="splat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="splat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="splat" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -127,6 +545,21 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../MAS" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/dist/index.html" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="$PROJECT_DIR$/node_modules/gulp" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Nicholas\Projects\splat\src\img" />
+      <recent name="C:\Users\Nicholas\Projects\splat\src" />
+      <recent name="C:\Users\Nicholas\Projects\splat\src\data" />
+      <recent name="C:\Users\Nicholas\Projects\splat\src\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nicholas\Projects\splat" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -139,6 +572,46 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration name="build" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>build</task>
+      </tasks>
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration name="default" type="js.build_tools.gulp" factoryName="Gulp.js" temporary="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile>$PROJECT_DIR$/gulpfile.js</gulpfile>
+      <tasks>
+        <task>default</task>
+      </tasks>
+      <arguments />
+      <envs />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Gulp.js.build" />
+      <item index="1" class="java.lang.String" itemvalue="Gulp.js.default" />
+    </list>
+    <recent_temporary>
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Gulp.js.default" />
+        <item index="1" class="java.lang.String" itemvalue="Gulp.js.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -153,32 +626,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1502425739768</updated>
-      <workItem from="1502425743053" duration="876000" />
+      <workItem from="1502425743053" duration="4463000" />
+      <workItem from="1502457790427" duration="17609000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="876000" />
+    <option name="totallyTimeSpent" value="22072000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12328767" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12328767" sideWeight="0.5058236" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21601686" sideWeight="0.49417636" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12328767" sideWeight="0.5058236" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32998884" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,22 +668,243 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.bowerrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="26" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.firebaserc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.bowerrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="1" column="27" lean-forward="false" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bower_components/headroom.js/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/headroom.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="5172" lean-forward="false" selection-start-line="6" selection-start-column="5172" selection-end-line="6" selection-end-column="5172" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/headroom.angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="42" column="36" lean-forward="false" selection-start-line="42" selection-start-column="36" selection-end-line="42" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/filters.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="96" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="22" selection-end-column="96" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#ion-content#0;n#ion-modal-view#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="20" lean-forward="false" selection-start-line="0" selection-start-column="20" selection-end-line="0" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="4" lean-forward="true" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+          <folding>
+            <element signature="e#67#83#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/routes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/services.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="101" column="33" lean-forward="false" selection-start-line="101" selection-start-column="33" selection-end-line="101" selection-end-column="33" />
+          <folding>
+            <element signature="e#95#504#0" expanded="true" />
+            <element signature="e#519#947#0" expanded="true" />
+            <element signature="e#959#1351#0" expanded="true" />
+            <element signature="e#1362#1692#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="11" lean-forward="false" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/menu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/data/gear.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4259">
+          <caret line="230" column="237" lean-forward="false" selection-start-line="230" selection-start-column="237" selection-end-line="230" selection-end-column="237" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/gearList.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="11" lean-forward="false" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#ion-view#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
+            <marker date="1502480989336" expanded="true" signature="0:1755" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="29" column="10" lean-forward="false" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+          <folding>
+            <element signature="e#188#238#0" expanded="true" />
+            <element signature="e#258#354#0" expanded="true" />
+            <element signature="e#455#744#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="26" lean-forward="false" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-163">
+          <caret line="1" column="24" lean-forward="false" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/ionic.app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="277">
+          <caret line="4414" column="23" lean-forward="false" selection-start-line="4414" selection-start-column="16" selection-end-line="4414" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="19" column="52" lean-forward="true" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="107" column="68" lean-forward="false" selection-start-line="107" selection-start-column="68" selection-end-line="107" selection-end-column="68" />
-          <folding>
-            <element signature="e#384#600#0" expanded="true" />
-            <element signature="e#603#648#0" expanded="true" />
-            <element signature="e#727#820#0" expanded="true" />
-            <element signature="e#857#879#0" expanded="true" />
-            <element signature="e#1024#1050#0" expanded="true" />
-            <element signature="e#1090#1120#0" expanded="true" />
-            <element signature="e#1748#1777#0" expanded="true" />
-            <element signature="e#2048#2077#0" expanded="true" />
-            <element signature="e#2130#2183#0" expanded="true" />
-            <element signature="e#2319#2340#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="352">
+          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PWA/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
