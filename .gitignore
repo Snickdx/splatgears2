@@ -1,0 +1,9 @@
+.idea/
+.dist/
+.firebaserc
+bower_components/
+database.rules.json
+dist/
+firebase.json
+node_modules/
+package-lock.json

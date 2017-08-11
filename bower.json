@@ -1,0 +1,23 @@
+{
+  "name": "splat",
+  "authors": [
+    "Nicholas <snickdx@gmail.com>"
+  ],
+  "description": "Splat Gears 2 Splatoon 2 Companion App",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "snickdx.me",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "^1.1.4",
+    "materialize": "^0.100.1",
+    "roboto-googlefont": "*"
+  }
+}
