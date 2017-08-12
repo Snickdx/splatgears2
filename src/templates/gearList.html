@@ -1,6 +1,6 @@
 <ion-view title="Gear List" id="page1">
 
-    <div class="col bar bar-subheader bar-assertive item-input-inset" style="height: 18vh" >
+    <div class="col bar bar-subheader bar-assertive item-input-inset" style="height: 120px" >
 
         <label class="item item-select item-assertive row-no-padding" id="filters-select1">
             <span class="input-label">Type</span>
@@ -24,7 +24,7 @@
         <!--<ion-toggle toggle-class="toggle-assertive" id="filters-toggle1">Separate Sub/Main</ion-toggle>-->
 
     </div>
-    <ion-content style="margin-top:18vh">
+    <ion-content style="margin-top:119px">
         <ion-list id="gearList-list3">
             <ion-item class="item-thumbnail-left" id="gearList-list-item11" ng-repeat="gear in gears | filter: searchFilter">
                 <img ng-src="../img/gear/{{gear.image}}">
