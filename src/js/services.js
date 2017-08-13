@@ -96,7 +96,7 @@ angular.module('app.services', [])
 				"Ink Saver (Sub)",
 				"Last-Ditch Effort",
 				"Ninja Squid",
-				"Object Shredd",
+				"Object Shredder",
 				"Opening Gambit",
 				"Quick Respawn",
 				"Quick Super Jump",

@@ -1,5 +1,6 @@
-.idea/
+.idea/*
 .firebaserc
 database.rules.json
 node_modules/
 package-lock.json
+src/img/Thumbs.db
