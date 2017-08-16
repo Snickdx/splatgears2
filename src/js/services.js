@@ -113,3 +113,33 @@ angular.module('app.services', [])
 			]
 		};
 	})
+
+	.factory('Favourites', function($localStorage){
+		var service = {};
+		
+		service.favourites = {};
+		
+		service.get = function(){
+			return service.favourites;
+		};
+		
+		service.load = function(){
+			service.favourites = $localStorage.favourites ? JSON.parse($localStorage.favourites) : {};
+		};
+		
+		service.add = function(id){
+			service.favourites[id] = true;
+			service.save();
+		};
+		
+		service.save = function(){
+			$localStorage.favourites = JSON.stringify(service.favourites);
+		};
+		
+		service.remove = function(id){
+			service.favourites[id] = undefined;
+			service.save();
+		};
+		
+		return service;
+	});

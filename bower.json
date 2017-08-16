@@ -16,8 +16,6 @@
     "tests"
   ],
   "dependencies": {
-    "angular-material": "^1.1.4",
-    "materialize": "^0.100.1",
-    "roboto-googlefont": "*"
+    "ngstorage": "^0.3.11"
   }
 }

@@ -8,8 +8,7 @@ angular.module('app.routes', [])
   // Each state's controller can be found in controllers.js
   $stateProvider
     
-
-      .state('menu.gearList', {
+  .state('menu.gearList', {
     url: '/list',
     views: {
       'side-menu21': {
@@ -45,11 +44,15 @@ angular.module('app.routes', [])
     controller: 'menuCtrl'
   })
 
-  .state('filters', {
-    url: '/filters',
-    templateUrl: 'templates/filters.html',
-    controller: 'filtersCtrl'
-  })
+  .state('menu.favourites', {
+    url: '/favourites',
+	  views: {
+		  'side-menu21': {
+			  templateUrl: 'templates/favourites.html',
+			  controller: 'favouritesCtrl'
+		  }
+	  }
+  });
 
 $urlRouterProvider.otherwise('/side-menu21/list')
 

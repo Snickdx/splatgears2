@@ -1,7 +1,7 @@
 angular.module('app.controllers', [])
 
-.controller('gearListCtrl', ['$scope', '$stateParams', '$http', 'Abilities',
-function ($scope, $stateParams, $http, Abilities) {
+.controller('gearListCtrl', ['$scope', '$stateParams', '$http', 'Abilities', 'Favourites',
+function ($scope, $stateParams, $http, Abilities, Favourites) {
 	$scope.Abilities = {
 		all : Abilities.all,
 		subs: Abilities.subs
@@ -13,7 +13,8 @@ function ($scope, $stateParams, $http, Abilities) {
 		Ability:'Any',
 		Main: 'Any',
 		Sub: 'Any',
-		Toggle: true
+		Toggle: false,
+		Favourite: false
 	};
 	
 	$scope.gears = [];
@@ -29,6 +30,8 @@ function ($scope, $stateParams, $http, Abilities) {
 			Sub:    $scope.input.Sub.localeCompare('Any') == 0
 		};
 		
+		if($scope.input.Favourite && !$scope.favourites[gear.code])return false;
+		
 		if(gear.type != $scope.input.Type && !any.Type){
 			result = false;
 		}
@@ -41,7 +44,8 @@ function ($scope, $stateParams, $http, Abilities) {
 			if(gear['main'] != $scope.input.Main && !any.Main  )result = false;
 			if(gear['likely_sub'] != $scope.input.Sub && !any.Sub)return false;
 		}else{
-			if(($scope.input.Ability != gear['ability'] && $scope.input.Ability != gear['SubHi']) && !any.Ability ){
+			if(($scope.input.Ability != gear['main'] && $scope.input.Ability != gear['likely_sub']) && !any.Ability ){
+				// console.log($scope.input.Ability, gear)
 				result = false;
 			}
 		}
@@ -53,6 +57,19 @@ function ($scope, $stateParams, $http, Abilities) {
 	$http.get('../data/gear.json').then(function(res){
 		$scope.gears = res.data;
 	});
+	
+	Favourites.load();
+	$scope.favourites = Favourites.get();
+	
+	$scope.addFavourite = function(id){
+		Favourites.add(id);
+		$scope.favourites = Favourites.get();
+	};
+	
+	$scope.removeFavourite = function(id){
+		Favourites.remove(id);
+		$scope.favourites = Favourites.get();
+	}
 }])
    
 .controller('kitOptimizerCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
@@ -79,10 +96,9 @@ function ($scope, $stateParams) {
 
 }])
    
-.controller('filtersCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
-function ($scope, $stateParams) {
-
-
-}])
+.controller('favouritesCtrl', ['$scope', '$stateParams', '$http',
+function ($scope, $stateParams, $http) {
+	
+	// $scope.favourites = favourties.get();
+	
+}]);
