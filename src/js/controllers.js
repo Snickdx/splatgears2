@@ -1,7 +1,7 @@
 angular.module('app.controllers', [])
 
-.controller('gearListCtrl', ['$scope', '$stateParams', '$http', 'Abilities', 'Favourites',
-function ($scope, $stateParams, $http, Abilities, Favourites) {
+.controller('gearListCtrl', ['$scope', '$stateParams', '$http', 'Abilities', 'Favourites', 'Database',
+function ($scope, $stateParams, $http, Abilities, Favourites, Database) {
 	$scope.Abilities = {
 		all : Abilities.all,
 		subs: Abilities.subs
@@ -54,11 +54,25 @@ function ($scope, $stateParams, $http, Abilities, Favourites) {
 		
 	};
 	
+	// Database.getCollection('/gear').$loaded(gears=>{
+	// 	$scope.gears = gears;
+	// 	console.log($scope.gears);
+	// });
+	//
 	$http.get('../data/gear.json').then(function(res){
-	
+
+		// var obj = {};
+		// res.data.forEach(function(gear, index){
+		// 	var id = index +1;
+		// 	var str = id+"";
+		// 	var str2 = "G" + str.padStart(3, '0');
+		// 	gear.id = str2;
+		// 	obj[str2] = gear;
+		// });
+		// console.log(JSON.stringify(obj));
 		$scope.gears = res.data;
 	});
-	
+
 	Favourites.load();
 	$scope.favourites = Favourites.get();
 	
@@ -89,9 +103,9 @@ function ($scope, $stateParams) {
 
 }])
    
-.controller('menuCtrl', ['$scope', '$stateParams', 'Database', '$localStorage',
-function ($scope, $stateParams, Database, $localStorage) {
-	$scope.current = $localStorage['sg_version'];
+.controller('menuCtrl', ['$scope', '$stateParams', 'Database', 'ServiceWorker',
+function ($scope, $stateParams, Database, ServiceWorker) {
+	$scope.current = ServiceWorker.getVersion();
 
 	$scope.latest = {};
 	
@@ -100,6 +114,7 @@ function ($scope, $stateParams, Database, $localStorage) {
 	});
 	
 	$scope.update = ()=>{
+		ServiceWorker.update();
 		window.location.reload(true);
 	}
 

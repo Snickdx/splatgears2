@@ -17,12 +17,13 @@
     <ion-side-menu side="left" id="side-menu21" class="stable-bg">
         <ion-content padding="true" style="top:0px !important; padding-top: 0" class="side-menu-left ">
             <ion-list id="menu-list1" class="manual-list-fullwidth stable-bg">
-                <ion-item class="item-thumbnail-left item-assertive no-border" id="menu-list-item9" style="margin-top: -10px; height: 170px; padding-top: 50px">
+                <ion-item class="item-thumbnail-left item-assertive no-border" id="menu-list-item9" style="margin-top: -10px; height: 205px; padding-top: 50px">
                     <img src="../img/android-icon-192x192.png" style="margin-top: 30px">
                     <h2 class="light">Splat Gears 2 v{{current}}</h2>
-                    <h3 style="white-space:normal;" class="light">The Splatoon 2 Gear App LOL</h3>
-                    <button class="button button-small button-light" ng-click="update()" ng-show="latest == current">
-                        Update to V{{latest}}
+                    <h3 style="white-space:normal;" class="light">The Splatoon 2 Gear App</h3>
+                    <h5>Latest: {{latest}}</h5>
+                    <button class="button button-small button-light" ng-click="update()" ng-show="latest != current">
+                        Update
                     </button>
                 </ion-item>
                 <ion-item  class="item-icon-right item-stable  no-border" id="menu-list-item1" ui-sref="menu.gearList()" menu-close="">

@@ -148,7 +148,7 @@ angular.module('app.services', [])
 		return service;
 	})
 	
-	.factory('ServiceWorker', ()=>{
+	.factory('ServiceWorker', ($localStorage, $http)=>{
 		const scope = './';
 		
 		let service = {};
@@ -228,11 +228,10 @@ angular.module('app.services', [])
 								};
 							};
 							
-							fetch('https://snickdx.firebaseio.com/latest.json').then(resp=>{
+							$http.get('https://snickdx.firebaseio.com/latest.json').then(resp=>{
 								if(typeof(Storage) !== undefined){
-									resp.text().then(text=>{
-										localStorage.setItem("ngStorage-sg_version", text);
-									});
+									$localStorage["sg_version"] = resp.data;
+									service.version = resp.data;
 								}
 							});
 							
@@ -263,9 +262,14 @@ angular.module('app.services', [])
 			return false;
 		};
 		
+		service.getVersion = () =>{
+			if(service.version != undefined)return service.version;
+			service.version = $localStorage['sg_version'];
+			return service.version;
+		};
+		
 		return service;
 	})
-	
 	
 	.factory('Database', ['$firebaseArray', '$firebaseObject', ($firebaseArray, $firebaseObject)=>{
 	
