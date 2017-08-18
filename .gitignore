@@ -1,5 +1,4 @@
-.idea/*
-.firebaserc
+idea/
 database.rules.json
 node_modules/
 package-lock.json

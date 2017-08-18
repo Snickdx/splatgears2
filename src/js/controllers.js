@@ -55,6 +55,7 @@ function ($scope, $stateParams, $http, Abilities, Favourites) {
 	};
 	
 	$http.get('../data/gear.json').then(function(res){
+	
 		$scope.gears = res.data;
 	});
 	
@@ -88,14 +89,22 @@ function ($scope, $stateParams) {
 
 }])
    
-.controller('menuCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
-function ($scope, $stateParams) {
+.controller('menuCtrl', ['$scope', '$stateParams', 'Database', '$localStorage',
+function ($scope, $stateParams, Database, $localStorage) {
+	$scope.current = $localStorage['sg_version'];
 
+	$scope.latest = {};
+	
+	Database.get('/latest',data=>{
+		$scope.latest = data.val();
+	});
+	
+	$scope.update = ()=>{
+		window.location.reload(true);
+	}
 
 }])
-   
+
 .controller('favouritesCtrl', ['$scope', '$stateParams', '$http',
 function ($scope, $stateParams, $http) {
 	
