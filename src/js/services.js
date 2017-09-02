@@ -1,6 +1,4 @@
-function noop(){
-
-}
+let noop = ()=>{};
 
 angular.module('app.services', [])
 	
@@ -121,28 +119,23 @@ angular.module('app.services', [])
 	.factory('Favourites', function($localStorage){
 		var service = {};
 		
-		service.favourites = {};
+		service.favourites = $localStorage.favourites == undefined ? {} : $localStorage.favourites;
 		
 		service.get = function(){
 			return service.favourites;
 		};
 		
-		service.load = function(){
-			service.favourites = $localStorage.favourites ? JSON.parse($localStorage.favourites) : {};
+		
+		service.check = function(id){
+			return service.favourites[id+""] != undefined;
 		};
 		
 		service.add = function(id){
 			service.favourites[id] = true;
-			service.save();
-		};
-		
-		service.save = function(){
-			$localStorage.favourites = JSON.stringify(service.favourites);
 		};
 		
 		service.remove = function(id){
 			service.favourites[id] = undefined;
-			service.save();
 		};
 		
 		return service;
@@ -202,47 +195,32 @@ angular.module('app.services', [])
 			});
 		};
 		
-		service.register = (success, failure) => {
-			success = success || noop;
-			failure = failure || noop;
+		service.register = (callback) => {
 			
 			if ('serviceWorker' in navigator) {
-				window.addEventListener('load', () => {
-					navigator.serviceWorker.register(
-						'service-worker.js',
-						{scope: scope}
-					)
-						.then(reg => {
-							service.registration = reg;
-							service.syncManager = reg.sync;
-							service.pushManager = reg.pushManager;
-							service.sw = reg.installing;
-							
-							reg.onupdatefound = () => {
-								reg.installing.onstatechange = function() {
-									if (navigator.serviceWorker.controller) {
-										console.log('New or updated content is available.');
-									} else {
-										console.log('Content is now available offline!');
-									}
-								};
-							};
-							
-							$http.get('https://snickdx.firebaseio.com/latest.json').then(resp=>{
-								if(typeof(Storage) !== undefined){
-									$localStorage["sg_version"] = resp.data;
-									service.version = resp.data;
+				window.addEventListener('load', async () => {
+					let reg = await navigator.serviceWorker.register('service-worker.js', {scope: scope});
+					try{
+						service.registration = reg;
+						service.syncManager = reg.sync;
+						service.pushManager = reg.pushManager;
+						service.sw = reg.installing;
+						
+						reg.onupdatefound = () => {
+							reg.installing.onstatechange = function () {
+								if (navigator.serviceWorker.controller) {
+									console.log('New Version Detected');
+								} else {
+									console.log('Content is now available offline!');
 								}
-							});
-							
-							success();
-							
-							return navigator.serviceWorker.ready;
-							
-						})
-						.catch(e => {
-							console.error("Error installing service worker", e)
-						});
+							};
+						};
+						callback(reg);
+						return navigator.serviceWorker.ready;
+						
+					}catch(e){
+						console.error("Error installing service worker", e)
+					}
 				});
 				
 			}else {
@@ -251,10 +229,11 @@ angular.module('app.services', [])
 			
 		};
 		
-		service.update = () => {
+		service.update = (callback) => {
 			service.getRegistration(reg=>{
-				reg.update();
+				reg.update(reg);
 				console.log('updated');
+				callback(reg);
 			});
 		};
 		
@@ -273,69 +252,69 @@ angular.module('app.services', [])
 	
 	.factory('Database', ['$firebaseArray', '$firebaseObject', ($firebaseArray, $firebaseObject)=>{
 	
-	let service = {};
-	const db = firebase.database();
+		let service = {};
+		const db = firebase.database();
+		
+		service.set = function(child, data){
+			db.ref(child).set(data);
+		};
+		
+		service.get = (child, callback) =>{
+			db.ref(child).once("value").then(function(snapshot){
+				callback(snapshot);
+			});
+		};
+		
+		service.getList = function(child){
+		
+		};
+		
+		service.getTimeRef = ()=>{
+			return firebase.database.ServerValue.TIMESTAMP;
+		};
+		
+		service.onConChange = callback => {
+			db.ref(".info/connected").on("value", snap=>{
+				callback(snap.val());
+			});
+		};
+		
+		service.getTimeOffset = callback =>{
+			db.ref(".info/serverTimeOffset").on("value", snap => {
+				callback(snap.val());
+			});
+		};
+		
+		service.onChange = function(child, type, callback){
+			db.ref(child).on(type, snapshot => {
+				callback(snapshot);
+			});
+		};
+		
+		service.update = function(child, obj){
+			return db.ref(child).update(obj);
+		};
+		
+		service.getOrderedbyLast = function(child, prop, num){
+			return db.ref(child).orderByChild(prop).limitToLast(num);
+		};
+		
+		service.pushKey = (child) => {
+			return db.ref(child).push();
+		};
+		
+		service.push = function(child, data){
+			return db.ref(child).push().set(data);
+		};
+		
+		service.getCollection = function(child){
+			return $firebaseArray(db.ref(child));
+		};
+		
+		service.getObject = function(child){
+			return $firebaseObject(db.ref(child));
+		};
+		
+		return service;
 	
-	service.set = function(child, data){
-		db.ref(child).set(data);
-	};
-	
-	service.get = (child, callback) =>{
-		db.ref(child).once("value").then(function(snapshot){
-			callback(snapshot);
-		});
-	};
-	
-	service.getList = function(child){
-	
-	};
-	
-	service.getTimeRef = ()=>{
-		return firebase.database.ServerValue.TIMESTAMP;
-	};
-	
-	service.onConChange = callback => {
-		db.ref(".info/connected").on("value", snap=>{
-			callback(snap.val());
-		});
-	};
-	
-	service.getTimeOffset = callback =>{
-		db.ref(".info/serverTimeOffset").on("value", snap => {
-			callback(snap.val());
-		});
-	};
-	
-	service.onChange = function(child, type, callback){
-		db.ref(child).on(type, snapshot => {
-			callback(snapshot);
-		});
-	};
-	
-	service.update = function(child, obj){
-		return db.ref(child).update(obj);
-	};
-	
-	service.getOrderedbyLast = function(child, prop, num){
-		return db.ref(child).orderByChild(prop).limitToLast(num);
-	};
-	
-	service.pushKey = (child) => {
-		return db.ref(child).push();
-	};
-	
-	service.push = function(child, data){
-		return db.ref(child).push().set(data);
-	};
-	
-	service.getCollection = function(child){
-		return $firebaseArray(db.ref(child));
-	};
-	
-	service.getObject = function(child){
-		return $firebaseObject(db.ref(child));
-	};
-	
-	return service;
-	
-}]);
+	}]);

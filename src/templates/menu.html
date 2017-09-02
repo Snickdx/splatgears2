@@ -21,8 +21,8 @@
                     <img src="../img/android-icon-192x192.png" style="margin-top: 30px">
                     <h2 class="light">Splat Gears 2 v{{current}}</h2>
                     <h3 style="white-space:normal;" class="light">The Splatoon 2 Gear App</h3>
-                    <h5>Latest: {{latest}}</h5>
-                    <button class="button button-small button-light" ng-click="update()" ng-show="latest != current">
+                    <h5>Latest: {{latest.$value}}</h5>
+                    <button class="button button-small button-light" ng-click="update()" ng-show="latest.$value != current">
                         Update
                     </button>
                 </ion-item>
@@ -34,10 +34,10 @@
                     <!--Favourites-->
                     <!--<i class="icon ion-heart"></i>-->
                 <!--</ion-item>-->
-                <!--<ion-item class="item-icon-right item-stable  no-border" id="menu-list-item3" ui-sref="menu.kitOptimizer()" menu-close="">-->
-                    <!--Kit Optimizer-->
-                    <!--<i class="icon ion-android-options"></i>-->
-                <!--</ion-item>-->
+                <ion-item class="item-icon-right item-stable  no-border" id="menu-list-item3" ui-sref="menu.kitOptimizer()" menu-close="">
+                    Kit Optimizer
+                    <i class="icon ion-android-options"></i>
+                </ion-item>
                 <ion-item class=" item-icon-right item-stable no-border" id="menu-list-item2" ui-sref="menu.brands()" menu-close="">
                     Brands
                     <i class="icon ion-information-circled"></i>

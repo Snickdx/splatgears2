@@ -52,8 +52,8 @@
                         </div>
                     </div>
                     <div class="col">
-                        <i style="font-size: x-large" ng-show="favourites[gear.code] != true " ng-click="addFavourite(gear.code)" class=" ion-ios-heart-outline" ></i>
-                        <i style="font-size: x-large" ng-show="favourites[gear.code] == true " ng-click="removeFavourite(gear.code)" class=" ion-ios-heart" ></i>
+                        <i style="font-size: x-large" ng-show="favourites.check(gear.code) != true " ng-click="favourites.add(gear.code)" class=" ion-ios-heart-outline" ></i>
+                        <i style="font-size: x-large" ng-show="favourites.check(gear.code) == true " ng-click="favourites.remove(gear.code)" class=" ion-ios-heart" ></i>
                     </div>
                 </div>
                 <div class="row">

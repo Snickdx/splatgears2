@@ -30,7 +30,8 @@ function ($scope, $stateParams, $http, Abilities, Favourites, Database) {
 			Sub:    $scope.input.Sub.localeCompare('Any') == 0
 		};
 		
-		if($scope.input.Favourite && !$scope.favourites[gear.code])return false;
+		if($scope.input.Favourite && !$scope.favourites.check(gear.code))return false;
+	
 		
 		if(gear.type != $scope.input.Type && !any.Type){
 			result = false;
@@ -45,7 +46,6 @@ function ($scope, $stateParams, $http, Abilities, Favourites, Database) {
 			if(gear['likely_sub'] != $scope.input.Sub && !any.Sub)return false;
 		}else{
 			if(($scope.input.Ability != gear['main'] && $scope.input.Ability != gear['likely_sub']) && !any.Ability ){
-				// console.log($scope.input.Ability, gear)
 				result = false;
 			}
 		}
@@ -73,24 +73,14 @@ function ($scope, $stateParams, $http, Abilities, Favourites, Database) {
 		$scope.gears = res.data;
 	});
 
-	Favourites.load();
-	$scope.favourites = Favourites.get();
+	// Favourites.load();
+	$scope.favourites = Favourites;
 	
-	$scope.addFavourite = function(id){
-		Favourites.add(id);
-		$scope.favourites = Favourites.get();
-	};
-	
-	$scope.removeFavourite = function(id){
-		Favourites.remove(id);
-		$scope.favourites = Favourites.get();
-	}
+
 }])
    
-.controller('kitOptimizerCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
-// You can include any angular dependencies as parameters for this function
-// TIP: Access Route Parameters for your page via $stateParams.parameterName
-function ($scope, $stateParams) {
+.controller('kitOptimizerCtrl', ['$scope', 'Abilities',
+function ($scope, Abilities) {
 
 
 }])
@@ -103,18 +93,21 @@ function ($scope, $stateParams) {
 
 }])
    
-.controller('menuCtrl', ['$scope', '$stateParams', 'Database', 'ServiceWorker',
-function ($scope, $stateParams, Database, ServiceWorker) {
-	$scope.current = ServiceWorker.getVersion();
+.controller('menuCtrl', ['$scope', '$stateParams', 'Database', 'ServiceWorker', '$localStorage','$http',
+function ($scope, $stateParams, Database, ServiceWorker, $localStorage, $http) {
+	$scope.current = $localStorage["sg_version"];
 
-	$scope.latest = {};
-	
-	Database.get('/latest',data=>{
-		$scope.latest = data.val();
-	});
+	$scope.latest = Database.getObject('/latest');
 	
 	$scope.update = ()=>{
-		ServiceWorker.update();
+		ServiceWorker.update(async reg=>{
+			let resp = await $http.get('https://snickdx.firebaseio.com/latest.json');
+			
+			if (typeof(Storage) !== undefined) {
+				$localStorage["sg_version"] = resp.data;
+				$scope.current = resp.data;
+			}
+		});
 		window.location.reload(true);
 	}
 

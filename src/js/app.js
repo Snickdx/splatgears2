@@ -13,9 +13,16 @@ angular.module('app', ['ionic', 'app.controllers', 'app.routes', 'app.directives
 
 })
 
-.run(function($ionicPlatform, ServiceWorker) {
-	ServiceWorker.register(()=>{
-		console.log("Regsitration Done");
+.run(async function($ionicPlatform, ServiceWorker, $localStorage, $http) {
+	
+	
+	ServiceWorker.register(async reg=>{
+		let resp = await $http.get('https://snickdx.firebaseio.com/latest.json');
+
+		if (typeof(Storage) !== undefined) {
+			$localStorage["sg_version"] = resp.data;
+		}
+
 	});
 	
 	$ionicPlatform.ready(function() {
