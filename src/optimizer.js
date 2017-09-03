@@ -85,7 +85,7 @@ function readGear(){
 	});
 }
 
-filterGears = async (selection) => {
+async function filterGears(selection){
 	let gear = await readGear();
 	
 	let res = {
@@ -101,11 +101,103 @@ filterGears = async (selection) => {
 			}
 		})
 	});
-	console.log(res);
-	
 	return res;
-};
+}
 
+function printKit(kit, end){
 
+}
 
-filterGears([1, 4]);
+function getRemaining(kit, end, selectedAbilities, gears){
+	let remainingAbilities = selectedAbilities.slice();//creates copy
+	let types = ['headgear', 'clothing', 'shoes'];
+	let kitObjs = [];
+	
+	// console.log("Specified Abilities");
+	
+	selectedAbilities.forEach(abilityIndex=>{
+		// console.log(abilities[abilityIndex]);
+		for(let i=0; i<end; i++) {
+			
+			if (gears[types[i]][kit[i]]['main'] === abilities[abilityIndex] && remainingAbilities.indexOf(abilityIndex) > -1) {
+				// console.log(abilities[abilityIndex], 'satisfied');
+				remainingAbilities.splice(remainingAbilities.indexOf(abilityIndex), 1);
+			}
+			if (gears[types[i]][kit[i]]['likely_sub'] === abilities[abilityIndex] && remainingAbilities.indexOf(abilityIndex) > -1) {
+				// console.log(abilities[abilityIndex], 'satisfied');
+				remainingAbilities.splice(remainingAbilities.indexOf(abilityIndex), 1);
+			}
+			kitObjs.push(gears[types[i]][kit[i]]);
+			
+		}
+
+	});
+	
+	// console.log(kitObjs);
+
+	return remainingAbilities.length;
+}
+
+//returns 0 if not partial 1 if partial 2 if complete
+function getCompletion(kit, end, selectedAbilities, gears){
+	
+	if(end === 1 )return true;
+	
+	let remaining = getRemaining(kit, end, selectedAbilities, gears);
+	
+	if(end === 2)return remaining < 2;
+	
+	return remaining === 0;
+}
+
+function search(selectedAbilities){
+	let gears = filterGears(selectedAbilities);
+	let k = 0;
+	let kits = [];
+	let B = [0, 0, 0];
+	while(k >= 0){
+		while(B[k] < N[k]){
+			B[k]++;
+			let stage = getCompletion(B, k, selectedAbilities, gears);
+			if(stage > 0){
+				if ( stage > 1){
+					console.log(B);
+					kits.push(B);
+				}
+				k++;
+				if(k > N[k])break;
+			}
+		}
+		if(k < B.length)B[k] = 0;
+		k--;
+	}
+	return 0;
+}
+
+// function search(B, N, S){
+// 	let k = 0;
+// 	let kits = [];
+// 	while(k >= 0){
+// 		while(B[k] < N[k]){
+// 			B[k]++;
+// 			if(isPartial(B, k, S)){
+// 				if ( isComplete(B, k, S)){
+// 					console.log(B);
+// 					kits.push(B);
+// 				}
+// 				k++;
+// 				if(k > N[k])break;
+// 			}
+// 		}
+// 		if(k < B.length)B[k] = 0;
+// 		k--;
+// 	}
+// 	return 0;
+// }
+
+let S =[4, 12];
+filterGears(S).then(gears=>{
+	let rem = getRemaining([1, 0, 0], 1, S, gears);
+	console.log(rem);
+});
+
