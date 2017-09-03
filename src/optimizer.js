@@ -1,4 +1,5 @@
 var fs = require('fs');
+require('console.table');
 
 const abilities = [
 	"Cold-Blooded",
@@ -29,6 +30,8 @@ const abilities = [
 	"Object Shredder",
 	"Stealth Jump"
 ];
+
+const types = ['headgear', 'clothing', 'shoes'];
 
 function createMap(){
 	var data = JSON.parse(fs.readFileSync('data/gear.json', 'utf8'));
@@ -77,10 +80,11 @@ function readMap(){
 }
 
 function readGear(){
-	return new Promise( resolve => {
+	return new Promise( (resolve, reject) => {
 		fs.readFile('data/gear.json', (err, data)=>{
 			data = JSON.parse(data);
 			resolve(data);
+			if(err)reject(err);
 		});
 	});
 }
@@ -89,9 +93,9 @@ async function filterGears(selection){
 	let gear = await readGear();
 	
 	let res = {
-		"shoes" : [],
-		"headgear": [],
-		"clothing": []
+		"shoes" : [undefined],
+		"headgear": [undefined],
+		"clothing": [undefined]
 	};
 	
 	gear.forEach(item=>{
@@ -104,64 +108,92 @@ async function filterGears(selection){
 	return res;
 }
 
-function printKit(kit, end){
-
-}
-
-function getRemaining(kit, end, selectedAbilities, gears){
+/**
+ * @desc  takes a kit and selected abilities and returns amt of selected abilities NOT in the kit
+ * @param {int[]} kitVector - 1st element: selected headgear, 2nd : selected clothing, 3rd : selected shoes
+ * @param {int[]} selectedAbilities - abilities specified by user
+ * @param {obj} gears - contains all gears with at least 1 of the selected abilities
+ */
+function getRemaining(kitVector, selectedAbilities, gears){
 	let remainingAbilities = selectedAbilities.slice();//creates copy
-	let types = ['headgear', 'clothing', 'shoes'];
-	let kitObjs = [];
-	
-	// console.log("Specified Abilities");
 	
 	selectedAbilities.forEach(abilityIndex=>{
-		// console.log(abilities[abilityIndex]);
-		for(let i=0; i<end; i++) {
+
+		for(let i=0; i<3; i++) {
+			if(kitVector[i] !== 0){
+				let currentGear = gears[types[i]][kitVector[i]];
+				let currentAbility = abilities[abilityIndex];
+				let loc = remainingAbilities.indexOf(abilityIndex);
+				let abilityAvailable = (loc) => loc > -1;
 			
-			if (gears[types[i]][kit[i]]['main'] === abilities[abilityIndex] && remainingAbilities.indexOf(abilityIndex) > -1) {
-				// console.log(abilities[abilityIndex], 'satisfied');
-				remainingAbilities.splice(remainingAbilities.indexOf(abilityIndex), 1);
+				
+				if ( currentGear['main'] === currentAbility &&  abilityAvailable(loc)) {
+					remainingAbilities.splice(loc, 1);
+				}
+				
+				loc = remainingAbilities.indexOf(abilityIndex);
+				
+				if ( currentGear['likely_sub'] === currentAbility && abilityAvailable(loc)) {
+					remainingAbilities.splice(loc, 1);
+				}
 			}
-			if (gears[types[i]][kit[i]]['likely_sub'] === abilities[abilityIndex] && remainingAbilities.indexOf(abilityIndex) > -1) {
-				// console.log(abilities[abilityIndex], 'satisfied');
-				remainingAbilities.splice(remainingAbilities.indexOf(abilityIndex), 1);
-			}
-			kitObjs.push(gears[types[i]][kit[i]]);
-			
 		}
 
 	});
 	
-	// console.log(kitObjs);
+	return remainingAbilities;
+}
 
-	return remainingAbilities.length;
+function printAbilities(selectedAbilities){
+	selectedAbilities.forEach(abilityIndex=>{
+		console.log(abilities[abilityIndex])
+	})
+}
+
+function printKit(kit, filteredGears){
+	
+	
+	let any = {
+		main: "Any",
+		likely_sub:"Any",
+		name: "Any",
+		type: "-"
+	};
+	
+	
+	let headgear = kit[0] === 0?  any : filteredGears['headgear'][kit[0]];
+	let clothing = kit[1] === 0? any : filteredGears['clothing'][kit[1]];
+	let shoes    = kit[2] === 0? any : filteredGears['shoes'][kit[2]];
+	
+	console.table([headgear, clothing, shoes]);
 }
 
 //returns 0 if not partial 1 if partial 2 if complete
-function getCompletion(kit, end, selectedAbilities, gears){
+function getCompletion(kit, selectedAbilities, gears){
 	
-	if(end === 1 )return true;
+	if(end === 0 )return true;
 	
-	let remaining = getRemaining(kit, end, selectedAbilities, gears);
+	let remaining = getRemaining(kit, selectedAbilities, gears).length;
+	// console.log(kit, end, remaining);
 	
-	if(end === 2)return remaining < 2;
+	if(end === 1)return remaining < 2;
 	
 	return remaining === 0;
 }
 
-function search(selectedAbilities){
-	let gears = filterGears(selectedAbilities);
+async function search(selectedAbilities){
+	let gears = await filterGears(selectedAbilities);
+	let N = [gears.headgear.length, gears.clothing.length, gears.shoes.length];
 	let k = 0;
 	let kits = [];
 	let B = [0, 0, 0];
 	while(k >= 0){
 		while(B[k] < N[k]){
 			B[k]++;
-			let stage = getCompletion(B, k, selectedAbilities, gears);
+			let stage = getCompletion(B, selectedAbilities, gears);
 			if(stage > 0){
 				if ( stage > 1){
-					console.log(B);
+					// console.log(B);
 					kits.push(B);
 				}
 				k++;
@@ -171,7 +203,8 @@ function search(selectedAbilities){
 		if(k < B.length)B[k] = 0;
 		k--;
 	}
-	return 0;
+	// console.log(kits);
+	return kits;
 }
 
 // function search(B, N, S){
@@ -195,9 +228,18 @@ function search(selectedAbilities){
 // 	return 0;
 // }
 
-let S =[4, 12];
+let S =[4, 12, 1, 5, 6, 7];//in saver sub and swim speed up
+let kit = [0, 2, 1];
+// search(S).then(kits=>{
+// 	console.log(kits);
+// });
+console.log('Selected Abilities');
+printAbilities(S);
 filterGears(S).then(gears=>{
-	let rem = getRemaining([1, 0, 0], 1, S, gears);
-	console.log(rem);
+	printKit(kit, gears);
+	let rem = getRemaining(kit, S, gears);
+	console.log('Abilities Remaining', rem.length);
+	printAbilities(rem);
 });
+
 
