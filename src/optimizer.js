@@ -1,6 +1,8 @@
 var fs = require('fs');
 require('console.table');
 
+//Test
+
 const abilities = [
 	"Cold-Blooded",
 	"Thermal Ink",
