@@ -89,6 +89,11 @@ function readGear(){
 	});
 }
 
+/**
+ * @desc Takes selection and filters out gear that doesn't match at least 1 ability in selection
+ * @param selection array of abilities
+ * @returns {Promise.<{shoes: [undefined], headgear: [undefined], clothing: [undefined]}>} - result set separated by type
+ */
 async function filterGears(selection){
 	let gear = await readGear();
 	
@@ -160,25 +165,44 @@ function printKit(kit, filteredGears){
 		type: "-"
 	};
 	
+	let nil = {
+		main: "nil",
+		likely_sub:"nil",
+		name: "nil",
+		type: "-"
+	};
 	
-	let headgear = kit[0] === 0?  any : filteredGears['headgear'][kit[0]];
-	let clothing = kit[1] === 0? any : filteredGears['clothing'][kit[1]];
-	let shoes    = kit[2] === 0? any : filteredGears['shoes'][kit[2]];
+	let kitArr = [];
 	
-	console.table([headgear, clothing, shoes]);
+	for(let i=0; i<3; i++){
+		let currentType = types[i];
+		let currentGear = kit[i];
+		
+		if(filteredGears[currentType].length === 1)
+			kitArr[i] = nil;
+		else if(currentGear === 0){
+			kitArr[i] = any;
+			any.type = currentType;
+		} else {
+			kitArr[i] = filteredGears[currentType][currentGear]
+		}
+	}
+	
+	console.table(kitArr);
 }
 
 //returns 0 if not partial 1 if partial 2 if complete
-function getCompletion(kit, selectedAbilities, gears){
+function getCompletion(kit, k, selectedAbilities, gears){
 	
-	if(end === 0 )return true;
+	if(k === 0 )return 1;
 	
 	let remaining = getRemaining(kit, selectedAbilities, gears).length;
-	// console.log(kit, end, remaining);
 	
-	if(end === 1)return remaining < 2;
+	if(k === 1 && remaining < 2)return 1;
 	
-	return remaining === 0;
+	if(remaining === 0) return 2;
+	
+	return 0;
 }
 
 async function search(selectedAbilities){
@@ -186,60 +210,50 @@ async function search(selectedAbilities){
 	let N = [gears.headgear.length, gears.clothing.length, gears.shoes.length];
 	let k = 0;
 	let kits = [];
-	let B = [0, 0, 0];
+	let currentKit = [0, 0, 0];
 	while(k >= 0){
-		while(B[k] < N[k]){
-			B[k]++;
-			let stage = getCompletion(B, selectedAbilities, gears);
-			if(stage > 0){
-				if ( stage > 1){
-					// console.log(B);
-					kits.push(B);
-				}
+		while(currentKit[k] < 3){
+			currentKit[k]++;
+			console.log(currentKit, k);
+			// printKit(currentKit, gears);
+			// let stage = getCompletion(currentKit, k, selectedAbilities, gears);
+			// if(stage > 0){
+			// 	if ( stage > 1){
+			// 		kits.push(currentKit);
+			// 	}
 				k++;
-				if(k > N[k])break;
-			}
+				if(k > 3)break;
+			// }
 		}
-		if(k < B.length)B[k] = 0;
+		if(k < currentKit.length)currentKit[k] = 0;
 		k--;
 	}
-	// console.log(kits);
 	return kits;
 }
 
-// function search(B, N, S){
-// 	let k = 0;
-// 	let kits = [];
-// 	while(k >= 0){
-// 		while(B[k] < N[k]){
-// 			B[k]++;
-// 			if(isPartial(B, k, S)){
-// 				if ( isComplete(B, k, S)){
-// 					console.log(B);
-// 					kits.push(B);
-// 				}
-// 				k++;
-// 				if(k > N[k])break;
-// 			}
-// 		}
-// 		if(k < B.length)B[k] = 0;
-// 		k--;
-// 	}
-// 	return 0;
-// }
+let S =[3, 4, 5];
+let kit = [1, 1, 1];
 
-let S =[4, 12, 1, 5, 6, 7];//in saver sub and swim speed up
-let kit = [0, 2, 1];
+// console.log('Selected Abilities');
+// printAbilities(S);
+// //
 // search(S).then(kits=>{
-// 	console.log(kits);
+// 	console.log("done");
 // });
-console.log('Selected Abilities');
-printAbilities(S);
+
+
 filterGears(S).then(gears=>{
 	printKit(kit, gears);
-	let rem = getRemaining(kit, S, gears);
-	console.log('Abilities Remaining', rem.length);
-	printAbilities(rem);
 });
 
-
+// filterGears(S).then(gears=>{
+//
+// 	printKit([1, 0, 0], gears);
+// 	let rem = getRemaining(kit, S, gears);
+// 	console.log('Abilities Remaining', rem.length);
+// 	printAbilities(rem);
+// 	let status = getCompletion(kit, 1, S, gears);
+// 	console.log('Kit status ', status);
+// });
+//
+//
