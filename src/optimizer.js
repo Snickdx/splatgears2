@@ -94,15 +94,22 @@ function readGear(){
 /**
  * @desc Takes selection and filters out gear that doesn't match at least 1 ability in selection
  * @param selection array of abilities
- * @returns {Promise.<{shoes: [undefined], headgear: [undefined], clothing: [undefined]}>} - result set separated by type
+ * @returns {Promise.<{shoes: [object], headgear: [object], clothing: [object]}>} - result set separated by type
  */
 async function filterGears(selection){
 	let gear = await readGear();
 	
+	let any = {
+		main: "Any",
+		likely_sub:"Any",
+		name: "Any",
+		type: "-"
+	};
+	
 	let res = {
-		"shoes" : [undefined],
-		"headgear": [undefined],
-		"clothing": [undefined]
+		"shoes" : [any],
+		"headgear": [any],
+		"clothing": [any]
 	};
 	
 	gear.forEach(item=>{
@@ -132,17 +139,18 @@ function getRemaining(kitVector, selectedAbilities, gears){
 				let currentAbility = abilities[abilityIndex];
 				let loc = remainingAbilities.indexOf(abilityIndex);
 				let abilityAvailable = (loc) => loc > -1;
+
+					if ( currentGear['main'] === currentAbility &&  abilityAvailable(loc)) {
+						remainingAbilities.splice(loc, 1);
+					}
+
+					loc = remainingAbilities.indexOf(abilityIndex);
+
+					if ( currentGear['likely_sub'] === currentAbility && abilityAvailable(loc)) {
+						remainingAbilities.splice(loc, 1);
+					}
 			
-				
-				if ( currentGear['main'] === currentAbility &&  abilityAvailable(loc)) {
-					remainingAbilities.splice(loc, 1);
-				}
-				
-				loc = remainingAbilities.indexOf(abilityIndex);
-				
-				if ( currentGear['likely_sub'] === currentAbility && abilityAvailable(loc)) {
-					remainingAbilities.splice(loc, 1);
-				}
+
 			}
 		}
 
@@ -233,20 +241,39 @@ async function search(selectedAbilities){
 	return kits;
 }
 
+async function getKits(selection){
+	let filteredGears = await filterGears(selection);
+	let kits = [];
+
+	filteredGears.shoes.forEach((currentShoe, shoeIndex)=>{
+		filteredGears.headgear.forEach((currentHeadgear, headgearIndex)=>{
+			let rem = getRemaining([headgearIndex, 0, shoeIndex], selection, filteredGears);
+			if(rem.length < 3) {
+				filteredGears.clothing.forEach((currentClothing, clothingIndex) => {
+					rem = getRemaining([headgearIndex, clothingIndex, shoeIndex], selection, filteredGears).length;
+					if(rem === 0){
+						kits.push([headgearIndex, clothingIndex, shoeIndex]);
+					}
+				})
+			}
+		})
+	});
+	
+	return kits;
+}
+
 let S =[3, 4, 5];
-let kit = [1, 1, 1];
-
-// console.log('Selected Abilities');
-// printAbilities(S);
-// //
-// search(S).then(kits=>{
-// 	console.log("done");
-// });
-
 
 filterGears(S).then(gears=>{
-	printKit(kit, gears);
+	getKits(S).then(kits=>{
+		kits.forEach(kit=>{
+			printKit(kit, gears);
+			console.log("Abilities Selected");
+			printAbilities(S);
+		})
+	});
 });
+
 
 // filterGears(S).then(gears=>{
 //
