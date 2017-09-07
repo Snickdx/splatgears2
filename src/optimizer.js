@@ -33,6 +33,8 @@ const abilities = [
 	"Stealth Jump"
 ];
 
+let S =[11, 12, 15];
+
 const types = ['headgear', 'clothing', 'shoes'];
 
 function createMap(){
@@ -83,13 +85,33 @@ function readMap(){
 
 function readGear(){
 	return new Promise( (resolve, reject) => {
-		fs.readFile('data/gear.json', (err, data)=>{
+		fs.readFile('data/newgear.json', (err, data)=>{
 			data = JSON.parse(data);
 			resolve(data);
 			if(err)reject(err);
 		});
 	});
 }
+
+function makeGear(){
+	return new Promise( (resolve, reject) => {
+		fs.readFile('data/gearDB.json', (err, data)=>{
+			let arr = [];
+			data = JSON.parse(data);
+			for(let key in data.gear){
+				if(data.gear.hasOwnProperty(key)){
+					arr.push(data.gear[key]);
+				}
+			}
+			fs.writeFile("data/newgear.json", JSON.stringify(arr), err=>{
+				console.log(err);
+			});
+			resolve(arr);
+			if(err)reject(err);
+		});
+	});
+}
+
 
 /**
  * @desc Takes selection and filters out gear that doesn't match at least 1 ability in selection
@@ -197,7 +219,7 @@ function printKit(kit, filteredGears){
 			kitArr[i] = filteredGears[currentType][currentGear]
 		}
 	}
-	
+	console.log(kit[3]);
 	console.table(kitArr);
 }
 
@@ -241,36 +263,75 @@ async function search(selectedAbilities){
 	return kits;
 }
 
+function getHash(arr){
+	return `K-${arr[0]}-${arr[1]}-${arr[2]}`
+}
+
+function getHash2(arr, gears){
+	return `${gears.headgear[arr[0]].id} ${gears.clothing[arr[1]].id} ${gears.shoes[arr[2]].id}`;
+}
+
 async function getKits(selection){
 	let filteredGears = await filterGears(selection);
-	let kits = [];
-
-	filteredGears.shoes.forEach((currentShoe, shoeIndex)=>{
-		filteredGears.headgear.forEach((currentHeadgear, headgearIndex)=>{
-			let rem = getRemaining([headgearIndex, 0, shoeIndex], selection, filteredGears);
-			if(rem.length < 3) {
-				filteredGears.clothing.forEach((currentClothing, clothingIndex) => {
-					rem = getRemaining([headgearIndex, clothingIndex, shoeIndex], selection, filteredGears).length;
-					if(rem === 0){
-						kits.push([headgearIndex, clothingIndex, shoeIndex]);
-					}
-				})
-			}
-		})
-	});
+	let kits = {};
+	let kit = undefined;
+	let hash = "";
+	let hash2 = "";
+	let amtAbilities = selection.length;
 	
+	filteredGears.shoes.forEach((currentShoe, shoeIndex)=>{
+		let rem = getRemaining([0, 0, shoeIndex], selection, filteredGears).length;
+		if(rem === 0){
+			kit = [0, 0, shoeIndex];
+			
+			hash2 = getHash2(kit, filteredGears);
+
+			kit.push(hash2);
+			kits[hash2] = kit;
+		}else{
+			filteredGears.headgear.forEach((currentHeadgear, headgearIndex)=>{
+				let rem = getRemaining([headgearIndex, 0, shoeIndex], selection, filteredGears).length;
+				if(rem === 0){
+					kit = [headgearIndex, 0, shoeIndex];
+				
+					hash2 = getHash2(kit, filteredGears);
+				
+					kit.push(hash2);
+					kits[hash2] = kit;
+				}else if(rem < 3 && amtAbilities > 2) {
+					filteredGears.clothing.forEach((currentClothing, clothingIndex) => {
+						rem = getRemaining([headgearIndex, clothingIndex, shoeIndex], selection, filteredGears).length;
+						if(rem === 0){
+							kit = [headgearIndex, clothingIndex, shoeIndex];
+					
+							hash2 = getHash2(kit, filteredGears);
+					
+							kit.push(hash2);
+							kits[hash2] = kit;
+						}
+					})
+				}
+			})
+		}
+	});
+
 	return kits;
 }
 
-let S =[3, 4, 5];
 
 filterGears(S).then(gears=>{
 	getKits(S).then(kits=>{
-		kits.forEach(kit=>{
-			printKit(kit, gears);
-			console.log("Abilities Selected");
-			printAbilities(S);
-		})
+		let count = 0;
+		for(let kit in kits){
+			if(kits.hasOwnProperty(kit)){
+				printKit(kits[kit], gears);
+				count++;
+			}
+		}
+
+		console.log(count, "Kits Returned");
+		console.log("Abilities Selected");
+		printAbilities(S);
 	});
 });
 
@@ -286,3 +347,4 @@ filterGears(S).then(gears=>{
 // });
 //
 //
+
