@@ -6,3 +6,4 @@ src/img/Thumbs.db
 .firebaserc
 REST/
 src/lib/
+firebase-debug.log
