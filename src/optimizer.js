@@ -120,6 +120,7 @@ function makeGear(){
  */
 async function filterGears(selection){
 	let gear = await readGear();
+	let hash = {};
 	
 	let any = {
 		main: "Any",
@@ -136,8 +137,9 @@ async function filterGears(selection){
 	
 	gear.forEach(item=>{
 		selection.forEach(index=>{
-			if(item['main'] === abilities[index] || item['likely_sub'] === abilities[index]){
+			if((item['main'] === abilities[index] || item['likely_sub'] === abilities[index]) && hash[item.id] !== true){
 				res[item['type']].push(item);
+				hash[item.id] = true;
 			}
 		})
 	});
@@ -275,7 +277,6 @@ async function getKits(selection){
 	let filteredGears = await filterGears(selection);
 	let kits = {};
 	let kit = undefined;
-	let hash = "";
 	let hash2 = "";
 	let amtAbilities = selection.length;
 	
