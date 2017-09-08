@@ -43,6 +43,48 @@ function readGears(url){
 	});
 }
 
+function printAbilities(selectedAbilities){
+	selectedAbilities.forEach(abilityIndex=>{
+		console.log(abilities[abilityIndex])
+	})
+}
+
+function printKit(kit, filteredGears){
+	
+	
+	let any = {
+		main: "Any",
+		likely_sub:"Any",
+		name: "Any",
+		type: "-"
+	};
+	
+	let nil = {
+		main: "nil",
+		likely_sub:"nil",
+		name: "nil",
+		type: "-"
+	};
+	
+	let kitArr = [];
+	
+	for(let i=0; i<3; i++){
+		let currentType = types[i];
+		let currentGear = kit[i];
+		
+		if(filteredGears[currentType].length === 1)
+			kitArr[i] = nil;
+		else if(currentGear === 0){
+			kitArr[i] = any;
+			any.type = currentType;
+		} else {
+			kitArr[i] = filteredGears[currentType][currentGear]
+		}
+	}
+	console.log(kit[3]);
+	console.table(kitArr);
+}
+
 /**
  * @desc Takes selection and filters out gear that doesn't match at least 1 ability in selection
  * @param selection array of abilities
@@ -101,48 +143,6 @@ function getRemaining(kitVector, selectedAbilities, gears){
 	return remainingAbilities;
 }
 
-function printAbilities(selectedAbilities){
-	selectedAbilities.forEach(abilityIndex=>{
-		console.log(abilities[abilityIndex])
-	})
-}
-
-function printKit(kit, filteredGears){
-	
-	
-	let any = {
-		main: "Any",
-		likely_sub:"Any",
-		name: "Any",
-		type: "-"
-	};
-	
-	let nil = {
-		main: "nil",
-		likely_sub:"nil",
-		name: "nil",
-		type: "-"
-	};
-	
-	let kitArr = [];
-	
-	for(let i=0; i<3; i++){
-		let currentType = types[i];
-		let currentGear = kit[i];
-		
-		if(filteredGears[currentType].length === 1)
-			kitArr[i] = nil;
-		else if(currentGear === 0){
-			kitArr[i] = any;
-			any.type = currentType;
-		} else {
-			kitArr[i] = filteredGears[currentType][currentGear]
-		}
-	}
-	console.log(kit[3]);
-	console.table(kitArr);
-}
-
 function getHash(arr, gears){
 	return `${gears.headgear[arr[0]].id} ${gears.clothing[arr[1]].id} ${gears.shoes[arr[2]].id}`;
 }
@@ -187,7 +187,6 @@ async function getKits(selection, filteredGears){
 	return kits;
 }
 
-
 async function main(){
 	
 	let S =[11, 12, 15];
@@ -208,6 +207,5 @@ async function main(){
 	printAbilities(S);
 	
 }
-
 
 main();

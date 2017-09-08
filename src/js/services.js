@@ -317,4 +317,117 @@ angular.module('app.services', [])
 		
 		return service;
 	
-	}]);
+	}])
+
+	.factory('Optimizer', ($http) =>{
+		let service = {};
+		
+		/**
+		 * @desc Takes selection and filters out gear that doesn't match at least 1 ability in selection
+		 * @param selection array of abilities
+		 * @param gears array of gear objects
+		 * @returns {Promise.<{shoes: [object], headgear: [object], clothing: [object]}>} - result set separated by type
+		 */
+		function filterGears(selection, gears){
+			
+			let hash = {};
+			
+			let any = {
+				main: "Any",
+				likely_sub:"Any",
+				name: "Any",
+				type: "-"
+			};
+			
+			let res = {
+				"shoes" : [any],
+				"headgear": [any],
+				"clothing": [any]
+			};
+			
+			// gears.forEach(item=>{
+			// 	selection.forEach(index=>{
+			// 		if((item['main'] === abilities[index] || item['likely_sub'] === abilities[index]) && hash[item.id] !== true){
+			// 			res[item['type']].push(item);
+			// 			hash[item.id] = true;
+			// 		}
+			// 	})
+			// });
+			return res;
+		}
+		
+		/**
+		 * @desc  takes a kit and selected abilities and returns amt of selected abilities NOT in the kit
+		 * @param {int[]} kitVector - 1st element: selected headgear, 2nd : selected clothing, 3rd : selected shoes
+		 * @param {int[]} selectedAbilities - abilities specified by user
+		 * @param  gears - contains all gears with at least 1 of the selected abilities
+		 */
+		function getRemaining(kitVector, selectedAbilities, gears){
+			let remainingAbilities = selectedAbilities.slice();//creates copy
+			selectedAbilities.forEach(abilityIndex=>{
+				for(let i=0; i<3; i++){
+					if(kitVector[i] !== 0){
+						let currentGear = gears[types[i]][kitVector[i]];
+						let currentAbility = abilities[abilityIndex];
+						let loc = remainingAbilities.indexOf(abilityIndex);
+						let abilityAvailable = (loc) => loc > -1;
+						if ( currentGear['main'] === currentAbility &&  abilityAvailable(loc)) remainingAbilities.splice(loc, 1);
+						loc = remainingAbilities.indexOf(abilityIndex);
+						if ( currentGear['likely_sub'] === currentAbility && abilityAvailable(loc)) remainingAbilities.splice(loc, 1);
+					}
+				}
+			});
+			return remainingAbilities;
+		}
+		
+		function getHash(arr, gears){
+			return `${gears.headgear[arr[0]].id} ${gears.clothing[arr[1]].id} ${gears.shoes[arr[2]].id}`;
+		}
+		
+		async function getKits(selection, filteredGears){
+			
+			let kits = {};
+			let kit;
+			let hash;
+			let amtAbilities = selection.length;
+			
+			filteredGears.shoes.forEach((currentShoe, shoeIndex)=>{
+				let rem = getRemaining([0, 0, shoeIndex], selection, filteredGears).length;
+				if(rem === 0){
+					kit = [0, 0, shoeIndex];
+					hash = getHash(kit, filteredGears);
+					kit.push(hash);
+					kits[hash] = kit;
+				}else{
+					filteredGears.headgear.forEach((currentHeadgear, headgearIndex)=>{
+						let rem = getRemaining([headgearIndex, 0, shoeIndex], selection, filteredGears).length;
+						if(rem === 0){
+							kit = [headgearIndex, 0, shoeIndex];
+							hash = getHash(kit, filteredGears);
+							kit.push(hash);
+							kits[hash] = kit;
+						}else if(rem < 3 && amtAbilities > 2) {
+							filteredGears.clothing.forEach((currentClothing, clothingIndex) => {
+								rem = getRemaining([headgearIndex, clothingIndex, shoeIndex], selection, filteredGears).length;
+								if(rem === 0){
+									kit = [headgearIndex, clothingIndex, shoeIndex];
+									hash = getHash(kit, filteredGears);
+									kit.push(hash);
+									kits[hash] = kit;
+								}
+							})
+						}
+					})
+				}
+			});
+			
+			return kits;
+		}
+		
+		service.generateKits = async (abilities)=>{
+			let gears = filterGears(abilities, await $http.get("../data/gear.json").data);
+			return getKits(abilities, gears);
+		};
+		
+		return service;
+	});

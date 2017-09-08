@@ -4,6 +4,50 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>Splat Gears 2</title>
+        <!--<meta charset="utf-8">-->
+        <meta name="description" content="Splatoon 2 Gear App">
+        <meta name="theme-color" content="#F67896">
+
+        <!--ANDROID-->
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="icon" sizes="192x192" href="img/android-icon-192x192.png">
+        <link rel="icon" sizes="120x120" href="img/apple-icon-120x120.png">
+
+        <!--IOS-->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#F67896">
+        <meta name="apple-mobile-web-app-title" content="Splat Gears 2">
+        <link rel="apple-touch-icon" href="img/android-icon-192x192.png">
+        <link rel="apple-touch-icon-precomposed" href="img/android-icon-192x192.png">
+        <link rel="apple-touch-startup-image" href="img/android-icon-192x192.png">
+
+        <!--WINDOWS-->
+        <meta name="msapplication-TileImage" content="img/android-icon-192x192.png">
+        <meta name="msapplication-TileColor" content="#F67896">
+        <meta name="msapplication-square310x310logo" content="img/android-icon-192x192.png">
+        <meta name="msapplication-navbutton-color" content="#F67896">
+		
+		<!-- WEB -->
+		<!--<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">-->
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="192x192" href="img/android-icon-192x192.png">
+
+        <link rel="manifest" href="manifest.json">
+
+        <script>
+            'use strict';
+
+            if ('serviceWorker' in navigator) {
+	            navigator.serviceWorker.register('service-worker.js', {scope: '/'})
+		            .then(function(reg) {
+			            console.log('Registration succeeded. Scope is ' + reg.scope);
+		            }).catch(function(error) {
+		            console.log('Registration failed with ' + error);
+	            });
+            }
+
+        </script>
+
     <!--<meta charset="utf-8">-->
     <meta name="description" content="Splatoon 2 Gear App">
     <meta name="theme-color" content="#F67896">

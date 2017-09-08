@@ -1,12 +1,12 @@
 angular.module('app.controllers', [])
 
-.controller('gearListCtrl', ['$scope', '$stateParams', '$http', 'Abilities', 'Favourites', 'Database',
-function ($scope, $stateParams, $http, Abilities, Favourites, Database) {
+.controller('gearListCtrl', ['$scope', '$stateParams', '$http', 'Abilities', 'Favourites',
+function ($scope, $stateParams, $http, Abilities, Favourites) {
 	$scope.Abilities = {
 		all : Abilities.all,
 		subs: Abilities.subs
 	};
-	
+
 	$scope.input = {
 		Type: 'Any',
 		Brand: 'Any',
@@ -53,12 +53,7 @@ function ($scope, $stateParams, $http, Abilities, Favourites, Database) {
 		return result;
 		
 	};
-	
-	// Database.getCollection('/gear').$loaded(gears=>{
-	// 	$scope.gears = gears;
-	// 	console.log($scope.gears);
-	// });
-	//
+
 	$http.get('../data/gear.json').then(function(res){
 
 		// var obj = {};
@@ -72,18 +67,38 @@ function ($scope, $stateParams, $http, Abilities, Favourites, Database) {
 		// console.log(JSON.stringify(obj));
 		$scope.gears = res.data;
 	});
-
 	// Favourites.load();
 	$scope.favourites = Favourites;
-	
 
 }])
    
-.controller('kitOptimizerCtrl', ['$scope', 'Abilities',
-function ($scope, Abilities) {
-
-
-}])
+.controller('kitOptimizerCtrl', ['$scope', 'Abilities', 'Optimizer',
+	function ($scope, Abilities, Optimizer) {
+		
+		$scope.kits = {};
+		
+		$scope.selection = [];
+		
+		$scope.Abilities = Abilities.all;
+		
+		$scope.input = {
+			ability: null
+		};
+		
+		$scope.addAbility = function(){
+			$scope.selection.push($scope.Abilities.indexOf($scope.input.ability));
+			console.log($scope.input.ability, $scope.Abilities.indexOf($scope.input.ability), $scope.selection);
+		};
+		
+		$scope.getKits = () =>{
+			Optimizer.generateKits([11, 12, 15]).then(data=>{
+				$scope.kits = data;
+			});
+		};
+		
+	
+	}
+])
    
 .controller('brandsCtrl', ['$scope', '$stateParams', // The following is the constructor function for this page's controller. See https://docs.angularjs.org/guide/controller
 // You can include any angular dependencies as parameters for this function
