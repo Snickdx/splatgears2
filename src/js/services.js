@@ -319,14 +319,14 @@ angular.module('app.services', [])
 	
 	}])
 
-	.factory('Optimizer', ($http) =>{
+	.factory('Optimizer', ($http, Abilities) =>{
 		let service = {};
 		
 		/**
 		 * @desc Takes selection and filters out gear that doesn't match at least 1 ability in selection
 		 * @param selection array of abilities
 		 * @param gears array of gear objects
-		 * @returns {Promise.<{shoes: [object], headgear: [object], clothing: [object]}>} - result set separated by type
+		 * @returns {{shoes: [null], headgear: [null], clothing: [null]}} - result set separated by type
 		 */
 		function filterGears(selection, gears){
 			
@@ -345,14 +345,14 @@ angular.module('app.services', [])
 				"clothing": [any]
 			};
 			
-			// gears.forEach(item=>{
-			// 	selection.forEach(index=>{
-			// 		if((item['main'] === abilities[index] || item['likely_sub'] === abilities[index]) && hash[item.id] !== true){
-			// 			res[item['type']].push(item);
-			// 			hash[item.id] = true;
-			// 		}
-			// 	})
-			// });
+			gears.forEach(item=>{
+				selection.forEach(index=>{
+					if((item['main'] === Abilities.all[index] || item['likely_sub'] === Abilities.all[index]) && hash[item.id] !== true){
+						res[item['type']].push(item);
+						hash[item.id] = true;
+					}
+				})
+			});
 			return res;
 		}
 		
@@ -363,12 +363,13 @@ angular.module('app.services', [])
 		 * @param  gears - contains all gears with at least 1 of the selected abilities
 		 */
 		function getRemaining(kitVector, selectedAbilities, gears){
+			let types = ["headgear", "clothing", "shoes"];
 			let remainingAbilities = selectedAbilities.slice();//creates copy
 			selectedAbilities.forEach(abilityIndex=>{
 				for(let i=0; i<3; i++){
 					if(kitVector[i] !== 0){
 						let currentGear = gears[types[i]][kitVector[i]];
-						let currentAbility = abilities[abilityIndex];
+						let currentAbility = Abilities.all[abilityIndex];
 						let loc = remainingAbilities.indexOf(abilityIndex);
 						let abilityAvailable = (loc) => loc > -1;
 						if ( currentGear['main'] === currentAbility &&  abilityAvailable(loc)) remainingAbilities.splice(loc, 1);
@@ -425,8 +426,10 @@ angular.module('app.services', [])
 		}
 		
 		service.generateKits = async (abilities)=>{
-			let gears = filterGears(abilities, await $http.get("../data/gear.json").data);
-			return getKits(abilities, gears);
+			let gears = await $http.get("../data/gear.json");
+			gears = filterGears(abilities, gears.data);
+			let kits = getKits(abilities, gears);
+			return kits;
 		};
 		
 		return service;

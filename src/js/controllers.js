@@ -82,20 +82,20 @@ function ($scope, $stateParams, $http, Abilities, Favourites) {
 		$scope.Abilities = Abilities.all;
 		
 		$scope.input = {
-			ability: null
+			ability: 0
 		};
 		
 		$scope.addAbility = function(){
 			$scope.selection.push($scope.Abilities.indexOf($scope.input.ability));
-			console.log($scope.input.ability, $scope.Abilities.indexOf($scope.input.ability), $scope.selection);
+		
 		};
 		
-		$scope.getKits = () =>{
-			Optimizer.generateKits([11, 12, 15]).then(data=>{
+		$scope.genKits = () => {
+			Optimizer.generateKits($scope.selection).then(data=>{
 				$scope.kits = data;
+				$scope.$apply();
 			});
 		};
-		
 	
 	}
 ])
