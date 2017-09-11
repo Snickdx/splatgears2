@@ -217,4 +217,20 @@ async function writeGearObj(){
 	fs.writeFile("data/gear2.json", JSON.stringify(hash), err => console.log(err));
 }
 
-writeGearObj();
+let compressImages = ()=>{
+	const imagemin = require('imagemin');
+	const imageminJpegtran = require('imagemin-jpegtran');
+	const imageminPngquant = require('imagemin-pngquant');
+	
+	imagemin(['src/img/gear/*.{jpg,png}'], 'build/images/gear/', {
+		plugins: [
+			imageminJpegtran(),
+			imageminPngquant({quality: '50'})
+		]
+	}).then(files => {
+		console.log(files);
+		//=> [{data: <Buffer 89 50 4e …>, path: 'build/images/foo.jpg'}, …]
+	});
+};
+
+compressImages();

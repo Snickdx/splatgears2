@@ -125,7 +125,6 @@ angular.module('app.services', [])
 			return service.favourites;
 		};
 		
-		
 		service.check = function(id){
 			return service.favourites[id] !== undefined;
 		};
@@ -442,7 +441,7 @@ angular.module('app.services', [])
 		};
 		
 		service.load = async () => {
-			let res = await $http.get("data/gear2.json");
+			let res = await $http.get("data/gear.json");
 			gears = res.data;
 			for(let key in gears){
 				if(gears.hasOwnProperty(key)){
