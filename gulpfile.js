@@ -1,9 +1,6 @@
 var gulp = require('gulp'),
-	inject = require('gulp-inject-string'),
-	textTransformation = require('gulp-text-simple'),
 	shell = require('gulp-shell'),
 	path = require('path'),
-	template = require('gulp-template'),
 	swPrecache = require('sw-precache'),
 	runSequence = require('run-sequence'),
 	rootDir = 'src';

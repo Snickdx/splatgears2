@@ -7,7 +7,7 @@
                 <select ng-model="input.ability" ng-options="item for item in Abilities"></select>
             </label>
             <div class="col">
-                <button id="kitOptimizer-button5" ng-disabled="selection.length == 6"  class="button button-light button-block icon-left ion-android-add" ng-click="addAbility()">Add</button>
+                <button  ng-disabled="selection.length == 6"  class="button button-light button-block icon-left ion-android-add" ng-click="addAbility()">Add</button>
             </div>
         </div>
 
@@ -16,12 +16,11 @@
                 <p class="light" style="margin-top: 10px">Selected Abilities: (Click to remove)</p>
             </div>
             <div class="col">
-                <button class="button button-light button-block" ng-click="genKits()">Go</button>
+                <button class="button button-light button-block" ng-disabled="selection.length == 0"  ng-click="genKits()">Go</button>
             </div>
         </div>
 
         <div class="row" style="max-height: 30px">
-
             <div class="col"  ng-click="selection.splice($index, 1)" style="max-height: 70px" ng-repeat="item in selection track by $index">
                 <img style="max-height: 40px" ng-src="../img/abilities/{{Abilities[item]}}.png"  >
             </div>
@@ -31,7 +30,11 @@
   <ion-content style="margin-top: 160px">
       <ion-list>
           <ion-item class="item"  ng-repeat="(kitKey, kitValue) in kits">
-              {{kitValue}}
+              <div class="row">
+                  <div class="col" ng-repeat="item in kitValue track by $index">
+                      <img ng-src="../img/gear/{{get(item).image}}">
+                  </div>
+              </div>
           </ion-item>
       </ion-list>
   </ion-content>

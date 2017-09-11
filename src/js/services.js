@@ -119,7 +119,7 @@ angular.module('app.services', [])
 	.factory('Favourites', function($localStorage){
 		var service = {};
 		
-		service.favourites = $localStorage.favourites == undefined ? {} : $localStorage.favourites;
+		service.favourites = $localStorage.favourites === undefined ? {} : $localStorage.favourites;
 		
 		service.get = function(){
 			return service.favourites;
@@ -127,11 +127,12 @@ angular.module('app.services', [])
 		
 		
 		service.check = function(id){
-			return service.favourites[id+""] != undefined;
+			return service.favourites[id] !== undefined;
 		};
 		
 		service.add = function(id){
 			service.favourites[id] = true;
+			$localStorage.favourites = service.favourites;
 		};
 		
 		service.remove = function(id){
@@ -319,42 +320,8 @@ angular.module('app.services', [])
 	
 	}])
 
-	.factory('Optimizer', ($http, Abilities) =>{
+	.factory('Optimizer', (Gear, Abilities) =>{
 		let service = {};
-		
-		/**
-		 * @desc Takes selection and filters out gear that doesn't match at least 1 ability in selection
-		 * @param selection array of abilities
-		 * @param gears array of gear objects
-		 * @returns {{shoes: [null], headgear: [null], clothing: [null]}} - result set separated by type
-		 */
-		function filterGears(selection, gears){
-			
-			let hash = {};
-			
-			let any = {
-				main: "Any",
-				likely_sub:"Any",
-				name: "Any",
-				type: "-"
-			};
-			
-			let res = {
-				"shoes" : [any],
-				"headgear": [any],
-				"clothing": [any]
-			};
-			
-			gears.forEach(item=>{
-				selection.forEach(index=>{
-					if((item['main'] === Abilities.all[index] || item['likely_sub'] === Abilities.all[index]) && hash[item.id] !== true){
-						res[item['type']].push(item);
-						hash[item.id] = true;
-					}
-				})
-			});
-			return res;
-		}
 		
 		/**
 		 * @desc  takes a kit and selected abilities and returns amt of selected abilities NOT in the kit
@@ -381,8 +348,8 @@ angular.module('app.services', [])
 			return remainingAbilities;
 		}
 		
-		function getHash(arr, gears){
-			return `${gears.headgear[arr[0]].id} ${gears.clothing[arr[1]].id} ${gears.shoes[arr[2]].id}`;
+		function getHash(arr){
+			return `${arr[0]} ${arr[1]} ${arr[2]}`;
 		}
 		
 		async function getKits(selection, filteredGears){
@@ -395,25 +362,22 @@ angular.module('app.services', [])
 			filteredGears.shoes.forEach((currentShoe, shoeIndex)=>{
 				let rem = getRemaining([0, 0, shoeIndex], selection, filteredGears).length;
 				if(rem === 0){
-					kit = [0, 0, shoeIndex];
-					hash = getHash(kit, filteredGears);
-					kit.push(hash);
+					kit = ['G000', 'G000', currentShoe.id];
+					hash = getHash(kit);
 					kits[hash] = kit;
 				}else{
 					filteredGears.headgear.forEach((currentHeadgear, headgearIndex)=>{
 						let rem = getRemaining([headgearIndex, 0, shoeIndex], selection, filteredGears).length;
 						if(rem === 0){
-							kit = [headgearIndex, 0, shoeIndex];
-							hash = getHash(kit, filteredGears);
-							kit.push(hash);
+							kit = [currentHeadgear.id, 'G000', currentShoe.id];
+							hash = getHash(kit);
 							kits[hash] = kit;
 						}else if(rem < 3 && amtAbilities > 2) {
 							filteredGears.clothing.forEach((currentClothing, clothingIndex) => {
 								rem = getRemaining([headgearIndex, clothingIndex, shoeIndex], selection, filteredGears).length;
 								if(rem === 0){
-									kit = [headgearIndex, clothingIndex, shoeIndex];
-									hash = getHash(kit, filteredGears);
-									kit.push(hash);
+									kit = [currentHeadgear.id, currentClothing.id, currentShoe.id];
+									hash = getHash(kit);
 									kits[hash] = kit;
 								}
 							})
@@ -426,10 +390,84 @@ angular.module('app.services', [])
 		}
 		
 		service.generateKits = async (abilities)=>{
-			let gears = await $http.get("../data/gear.json");
-			gears = filterGears(abilities, gears.data);
-			let kits = getKits(abilities, gears);
-			return kits;
+			let gears = await Gear.filter(abilities);
+			return getKits(abilities, gears);
+		};
+		
+		return service;
+	})
+
+	.factory('Gear', ($http, Favourites, Abilities) => {
+		let service= {};
+		
+		let gears = null;
+		
+		/**
+		 * @desc Takes selection and filters out gear that doesn't match at least 1 ability in selection
+		 * @param selection array of abilities
+		 * @param gears array of gear objects
+		 * @returns {{shoes: [null], headgear: [null], clothing: [null]}} - result set separated by type
+		 */
+		service.filter = async selection =>{
+			if(gears === null)gears = await service.load();
+			let hash = {};
+			
+			let any = {
+				id:"G000",
+				main: "Any",
+				likely_sub:"Any",
+				name: "Any",
+				type: "-",
+				image: "Any.png"
+			};
+			
+			let res = {
+				"shoes" : [any],
+				"headgear": [any],
+				"clothing": [any]
+			};
+			
+			for(let key in gears){
+				if(gears.hasOwnProperty(key)){
+					let item = gears[key];
+					selection.forEach(index=>{
+						if((item['main'] === Abilities.all[index] || item['likely_sub'] === Abilities.all[index]) && hash[item.id] !== true){
+							res[item['type']].push(item);
+							hash[item.id] = true;
+						}
+					})
+				}
+			}
+			return res;
+		};
+		
+		service.load = async () => {
+			let res = await $http.get("data/gear2.json");
+			gears = res.data;
+			for(let key in gears){
+				if(gears.hasOwnProperty(key)){
+					gears[key].favourite = Favourites.check(key) === true;
+				}
+			}
+			return gears;
+		};
+		
+		service.getAll = async () => {
+			if (gears === null)await service.load();
+			return gears;
+		};
+		
+		service.get = id => {
+			if (id === "G000")
+				return {
+					id:"G000",
+					main: "Any",
+					likely_sub:"Any",
+					name: "Any",
+					type: "-",
+					image: "Any.png"
+				};
+			return gears[id];
 		};
 		
 		return service;

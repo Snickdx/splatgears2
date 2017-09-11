@@ -1,7 +1,7 @@
 angular.module('app.controllers', [])
 
-.controller('gearListCtrl', ['$scope', '$stateParams', '$http', 'Abilities', 'Favourites',
-function ($scope, $stateParams, $http, Abilities, Favourites) {
+.controller('gearListCtrl', ['$scope', '$stateParams', '$http', 'Abilities', 'Favourites', 'Gear',
+function ($scope, $stateParams, $http, Abilities, Favourites, Gear) {
 	$scope.Abilities = {
 		all : Abilities.all,
 		subs: Abilities.subs
@@ -17,30 +17,31 @@ function ($scope, $stateParams, $http, Abilities, Favourites) {
 		Favourite: false
 	};
 	
-	$scope.gears = [];
+	$scope.gears = {};
 	
-	$scope.searchFilter = function(gear){
-		var result = true;
-		
-		var any = {
+	$scope.filter = function(gear){
+	
+		let result = true;
+
+		let any = {
 			Type :  $scope.input.Type.localeCompare('Any') == 0,
 			Brand:   $scope.input.Brand.localeCompare('Any') == 0,
 			Ability:  $scope.input.Ability.localeCompare('Any') == 0,
 			Main:  $scope.input.Main.localeCompare('Any') == 0,
 			Sub:    $scope.input.Sub.localeCompare('Any') == 0
 		};
-		
-		if($scope.input.Favourite && !$scope.favourites.check(gear.code))return false;
-	
-		
+
+		if($scope.input.Favourite && !$scope.favourites.check(gear.id))return false;
+
+
 		if(gear.type != $scope.input.Type && !any.Type){
 			result = false;
 		}
-		
+
 		if(gear.Brand != $scope.input.brand && !any.Brand){
 			result = false;
 		}
-		
+
 		if($scope.input.Toggle){
 			if(gear['main'] != $scope.input.Main && !any.Main  )result = false;
 			if(gear['likely_sub'] != $scope.input.Sub && !any.Sub)return false;
@@ -49,31 +50,18 @@ function ($scope, $stateParams, $http, Abilities, Favourites) {
 				result = false;
 			}
 		}
-		
 		return result;
 		
 	};
-
-	$http.get('../data/gear.json').then(function(res){
-
-		// var obj = {};
-		// res.data.forEach(function(gear, index){
-		// 	var id = index +1;
-		// 	var str = id+"";
-		// 	var str2 = "G" + str.padStart(3, '0');
-		// 	gear.id = str2;
-		// 	obj[str2] = gear;
-		// });
-		// console.log(JSON.stringify(obj));
-		$scope.gears = res.data;
-	});
-	// Favourites.load();
+	
+	Gear.getAll().then(gear => $scope.gears = gear);
+	
 	$scope.favourites = Favourites;
 
 }])
    
-.controller('kitOptimizerCtrl', ['$scope', 'Abilities', 'Optimizer',
-	function ($scope, Abilities, Optimizer) {
+.controller('kitOptimizerCtrl', ['$scope', 'Abilities', 'Optimizer', 'Gear',
+	function ($scope, Abilities, Optimizer, Gear) {
 		
 		$scope.kits = {};
 		
@@ -85,9 +73,14 @@ function ($scope, $stateParams, $http, Abilities, Favourites) {
 			ability: 0
 		};
 		
+		Gear.load().then(()=>{console.log("loaded gears")});
+		
+		$scope.get = (id)=>{
+			return Gear.get(id);
+		};
+		
 		$scope.addAbility = function(){
 			$scope.selection.push($scope.Abilities.indexOf($scope.input.ability));
-		
 		};
 		
 		$scope.genKits = () => {

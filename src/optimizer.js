@@ -208,4 +208,13 @@ async function main(){
 	
 }
 
-main();
+async function writeGearObj(){
+	let gears = await readGears('data/gear.json');
+	let hash = {};
+	gears.forEach(gear=> {
+		hash[gear.id] = gear;
+	});
+	fs.writeFile("data/gear2.json", JSON.stringify(hash), err => console.log(err));
+}
+
+writeGearObj();

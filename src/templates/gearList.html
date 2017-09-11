@@ -2,7 +2,7 @@
 
     <div class="col bar bar-subheader bar-assertive item-input-inset" style="height: 160px" >
 
-        <label class="item item-select item-assertive row-no-padding" id="filters-select1">
+        <label class="item item-select item-assertive row-no-padding">
             <span class="input-label">Type</span>
             <select ng-model="input.Type">
                 <option selected>Any</option>
@@ -41,7 +41,7 @@
     </div>
     <ion-content style="margin-top:160px">
         <ion-list id="gearList-list3">
-            <ion-item class="item-thumbnail-left" id="gearList-list-item11" ng-repeat="gear in gears | filter: searchFilter">
+            <ion-item class="item-thumbnail-left" id="gearList-list-item11" ng-repeat="(key, gear) in gears" ng-show="filter(gear)">
                 <img ng-src="../img/gear/{{gear.image}}">
                 <div class="row">
                     <div class="col col-90">
@@ -50,8 +50,8 @@
                         </div>
                     </div>
                     <div class="col">
-                        <i style="font-size: x-large" ng-show="favourites.check(gear.code) != true " ng-click="favourites.add(gear.code)" class=" ion-ios-heart-outline" ></i>
-                        <i style="font-size: x-large" ng-show="favourites.check(gear.code) == true " ng-click="favourites.remove(gear.code)" class=" ion-ios-heart" ></i>
+                        <i style="font-size: x-large" ng-show="favourites.check(gear.id) != true " ng-click="favourites.add(gear.id)" class=" ion-ios-heart-outline" ></i>
+                        <i style="font-size: x-large" ng-show="favourites.check(gear.id) == true " ng-click="favourites.remove(gear.id)" class=" ion-ios-heart" ></i>
                     </div>
                 </div>
                 <div class="row">
