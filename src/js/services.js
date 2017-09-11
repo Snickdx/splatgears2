@@ -1,4 +1,3 @@
-let noop = ()=>{};
 
 angular.module('app.services', [])
 	
@@ -155,8 +154,8 @@ angular.module('app.services', [])
 		service.registration = null;
 		
 		service.getRegistration = (success, failure) => {
-			success = success || noop;
-			failure = failure || noop;
+			success = success || (()=>{})();
+			failure = failure || (()=>{})();
 			
 			navigator.serviceWorker.getRegistration(scope).then(reg => {
 				success(reg);
@@ -371,7 +370,7 @@ angular.module('app.services', [])
 							kit = [currentHeadgear.id, 'G000', currentShoe.id];
 							hash = getHash(kit);
 							kits[hash] = kit;
-						}else if(rem < 3 && amtAbilities > 2) {
+						}else if(rem < 3 ) {
 							filteredGears.clothing.forEach((currentClothing, clothingIndex) => {
 								rem = getRemaining([headgearIndex, clothingIndex, shoeIndex], selection, filteredGears).length;
 								if(rem === 0){
@@ -404,7 +403,6 @@ angular.module('app.services', [])
 		/**
 		 * @desc Takes selection and filters out gear that doesn't match at least 1 ability in selection
 		 * @param selection array of abilities
-		 * @param gears array of gear objects
 		 * @returns {{shoes: [null], headgear: [null], clothing: [null]}} - result set separated by type
 		 */
 		service.filter = async selection =>{
@@ -437,6 +435,7 @@ angular.module('app.services', [])
 					})
 				}
 			}
+			console.log(res);
 			return res;
 		};
 		

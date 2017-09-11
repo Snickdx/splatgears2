@@ -4,7 +4,10 @@
 	"description": "",
 	"main": "gulpfile.js",
 	"scripts": {
-		"serve": "firebase serve"
+		"serve": "firebase serve",
+		"bundle-sw": "webpack && gulp generate-sw",
+		"generate-sw": "gulp generate-sw",
+		"deploy" : "firebase deploy --only hosting"
 	},
 	"repository": {
 		"type": "git",
@@ -31,6 +34,7 @@
 		"imagemin-jpegtran": "^5.0.2",
 		"imagemin-pngquant": "^5.0.1",
 		"path": "^0.12.7",
-		"run-sequence": "^2.1.0"
+		"run-sequence": "^2.1.0",
+		"webpack": "^3.5.6"
 	}
 }
