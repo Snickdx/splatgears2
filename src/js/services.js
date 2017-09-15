@@ -318,44 +318,42 @@ angular.module('app.services', [])
 	
 	}])
 
-	.factory('Optimizer', (Gear, Abilities) =>{
+	.factory('Optimizer', (Gear, Abilities, Webworker) =>{
 		let service = {};
 		
-		/**
-		 * @desc  takes a kit and selected abilities and returns amt of selected abilities NOT in the kit
-		 * @param {int[]} kitVector - 1st element: selected headgear, 2nd : selected clothing, 3rd : selected shoes
-		 * @param {int[]} selectedAbilities - abilities specified by user
-		 * @param  gears - contains all gears with at least 1 of the selected abilities
-		 */
-		function getRemaining(kitVector, selectedAbilities, gears){
-			let types = ["headgear", "clothing", "shoes"];
-			let remainingAbilities = selectedAbilities.slice();//creates copy
-			selectedAbilities.forEach(abilityIndex=>{
-				for(let i=0; i<3; i++){
-					if(kitVector[i] !== 0){
-						let currentGear = gears[types[i]][kitVector[i]];
-						let currentAbility = Abilities.all[abilityIndex];
-						let loc = remainingAbilities.indexOf(abilityIndex);
-						let abilityAvailable = (loc) => loc > -1;
-						if ( currentGear['main'] === currentAbility &&  abilityAvailable(loc)) remainingAbilities.splice(loc, 1);
-						loc = remainingAbilities.indexOf(abilityIndex);
-						if ( currentGear['likely_sub'] === currentAbility && abilityAvailable(loc)) remainingAbilities.splice(loc, 1);
-					}
-				}
-			});
-			return remainingAbilities;
-		}
-		
-		function getHash(arr){
-			return `${arr[0]} ${arr[1]} ${arr[2]}`;
-		}
-		
-		async function getKits(selection, filteredGears){
+		function getKits(selection, filteredGears, Abilities){
 			
+			/**
+			 * @desc  takes a kit and selected abilities and returns amt of selected abilities NOT in the kit
+			 * @param {int[]} kitVector - 1st element: selected headgear, 2nd : selected clothing, 3rd : selected shoes
+			 * @param {int[]} selectedAbilities - abilities specified by user
+			 * @param  gears - contains all gears with at least 1 of the selected abilities
+			 */
+			function getRemaining(kitVector, selectedAbilities, gears){
+				let types = ["headgear", "clothing", "shoes"];
+				let remainingAbilities = selectedAbilities.slice();//creates copy
+				selectedAbilities.forEach(abilityIndex=>{
+					for(let i=0; i<3; i++){
+						if(kitVector[i] !== 0){
+							let currentGear = gears[types[i]][kitVector[i]];
+							let currentAbility = Abilities.all[abilityIndex];
+							let loc = remainingAbilities.indexOf(abilityIndex);
+							let abilityAvailable = (loc) => loc > -1;
+							if ( currentGear['main'] === currentAbility &&  abilityAvailable(loc)) remainingAbilities.splice(loc, 1);
+							loc = remainingAbilities.indexOf(abilityIndex);
+							if ( currentGear['likely_sub'] === currentAbility && abilityAvailable(loc)) remainingAbilities.splice(loc, 1);
+						}
+					}
+				});
+				return remainingAbilities;
+			}
+			
+			function getHash(arr){
+				return `${arr[0]} ${arr[1]} ${arr[2]}`;
+			}
 			let kits = {};
 			let kit;
 			let hash;
-			let amtAbilities = selection.length;
 			
 			filteredGears.shoes.forEach((currentShoe, shoeIndex)=>{
 				let rem = getRemaining([0, 0, shoeIndex], selection, filteredGears).length;
@@ -389,7 +387,8 @@ angular.module('app.services', [])
 		
 		service.generateKits = async (abilities)=>{
 			let gears = await Gear.filter(abilities);
-			return getKits(abilities, gears);
+			let myWorker = Webworker.create(getKits);
+			return myWorker.run(abilities, gears, Abilities);
 		};
 		
 		return service;
@@ -435,7 +434,6 @@ angular.module('app.services', [])
 					})
 				}
 			}
-			console.log(res);
 			return res;
 		};
 		

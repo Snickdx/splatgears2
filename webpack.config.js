@@ -29,5 +29,5 @@ module.exports = {
 	// 		compress: false
 	// 	})
 	// ]
-	watch: true
+	// watch: true
 };

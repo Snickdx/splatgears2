@@ -86,6 +86,7 @@ function ($scope, $stateParams, $http, Abilities, Favourites, Gear) {
 		$scope.genKits = () => {
 			Optimizer.generateKits($scope.selection).then(data=>{
 				$scope.kits = data;
+				console.log(data);
 				$scope.$apply();
 			});
 		};
